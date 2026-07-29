@@ -1,0 +1,70 @@
+from .nodes                          import NODE_CLASS_MAPPINGS as _NCM_NODES,         NODE_DISPLAY_NAME_MAPPINGS as _NDM_NODES
+from .latent_anchor                  import NODE_CLASS_MAPPINGS as _NCM_LATENT_ANCHOR, NODE_DISPLAY_NAME_MAPPINGS as _NDM_LATENT_ANCHOR
+from .latent_anchor_aware            import NODE_CLASS_MAPPINGS as _NCM_AWARE,         NODE_DISPLAY_NAME_MAPPINGS as _NDM_AWARE
+from .latent_tiled_sampler           import NODE_CLASS_MAPPINGS as _NCM_TILED_SAMP,    NODE_DISPLAY_NAME_MAPPINGS as _NDM_TILED_SAMP
+from .latent_upsampler_tiled         import NODE_CLASS_MAPPINGS as _NCM_UPSAMPLER,     NODE_DISPLAY_NAME_MAPPINGS as _NDM_UPSAMPLER
+from .latent_text_amplifier          import NODE_CLASS_MAPPINGS as _NCM_TEXTAMP,       NODE_DISPLAY_NAME_MAPPINGS as _NDM_TEXTAMP
+from .latent_likeness_guide          import NODE_CLASS_MAPPINGS as _NCM_LIKE_GUIDE,    NODE_DISPLAY_NAME_MAPPINGS as _NDM_LIKE_GUIDE
+from .latent_likeness_anchor         import NODE_CLASS_MAPPINGS as _NCM_LIKE_ANCHOR,   NODE_DISPLAY_NAME_MAPPINGS as _NDM_LIKE_ANCHOR
+from .latent_likeness_semantic_clamp import NODE_CLASS_MAPPINGS as _NCM_LIKE_SEM,      NODE_DISPLAY_NAME_MAPPINGS as _NDM_LIKE_SEM
+from .latent_action_amplifier        import NODE_CLASS_MAPPINGS as _NCM_ACT_AMP,       NODE_DISPLAY_NAME_MAPPINGS as _NDM_ACT_AMP
+from .stg_guider                     import NODE_CLASS_MAPPINGS as _NCM_STG,           NODE_DISPLAY_NAME_MAPPINGS as _NDM_STG
+from .echo_dmd_sampler               import NODE_CLASS_MAPPINGS as _NCM_DMD_SAMP,      NODE_DISPLAY_NAME_MAPPINGS as _NDM_DMD_SAMP
+from .lora_stack_av                  import NODE_CLASS_MAPPINGS as _NCM_LORA_STACK,    NODE_DISPLAY_NAME_MAPPINGS as _NDM_LORA_STACK
+from .latent_face_detector           import NODE_CLASS_MAPPINGS as _NCM_FACE_DETECT,   NODE_DISPLAY_NAME_MAPPINGS as _NDM_FACE_DETECT
+from .model_inspector                import NODE_CLASS_MAPPINGS as _NCM_INSPECT,       NODE_DISPLAY_NAME_MAPPINGS as _NDM_INSPECT
+from .model_forward_probe            import NODE_CLASS_MAPPINGS as _NCM_PROBE,         NODE_DISPLAY_NAME_MAPPINGS as _NDM_PROBE
+from .ltx_reference_enable           import NODE_CLASS_MAPPINGS as _NCM_LTX_REF_EN,    NODE_DISPLAY_NAME_MAPPINGS as _NDM_LTX_REF_EN
+from .ltx_reference_conditioning     import NODE_CLASS_MAPPINGS as _NCM_LTX_REF_CND,   NODE_DISPLAY_NAME_MAPPINGS as _NDM_LTX_REF_CND
+from .ltx_face_identity_reinforcer   import NODE_CLASS_MAPPINGS as _NCM_LTX_REINF,    NODE_DISPLAY_NAME_MAPPINGS as _NDM_LTX_REINF
+from .activation_calibrator          import NODE_CLASS_MAPPINGS as _NCM_CALIB,         NODE_DISPLAY_NAME_MAPPINGS as _NDM_CALIB
+
+NODE_CLASS_MAPPINGS = {
+    **_NCM_NODES,
+    **_NCM_LATENT_ANCHOR,
+    **_NCM_AWARE,
+    **_NCM_TILED_SAMP,
+    **_NCM_UPSAMPLER,
+    **_NCM_TEXTAMP,
+    **_NCM_LIKE_GUIDE,
+    **_NCM_LIKE_ANCHOR,
+    **_NCM_LIKE_SEM,
+    **_NCM_ACT_AMP,
+    **_NCM_STG,
+    **_NCM_DMD_SAMP,
+    **_NCM_LORA_STACK,
+    **_NCM_FACE_DETECT,
+    **_NCM_INSPECT,
+    **_NCM_PROBE,
+    **_NCM_LTX_REF_EN,
+    **_NCM_LTX_REF_CND,
+    **_NCM_LTX_REINF,
+    **_NCM_CALIB,
+}
+
+NODE_DISPLAY_NAME_MAPPINGS = {
+    **_NDM_NODES,
+    **_NDM_LATENT_ANCHOR,
+    **_NDM_AWARE,
+    **_NDM_TILED_SAMP,
+    **_NDM_UPSAMPLER,
+    **_NDM_TEXTAMP,
+    **_NDM_LIKE_GUIDE,
+    **_NDM_LIKE_ANCHOR,
+    **_NDM_LIKE_SEM,
+    **_NDM_ACT_AMP,
+    **_NDM_STG,
+    **_NDM_DMD_SAMP,
+    **_NDM_LORA_STACK,
+    **_NDM_FACE_DETECT,
+    **_NDM_INSPECT,
+    **_NDM_PROBE,
+    **_NDM_LTX_REF_EN,
+    **_NDM_LTX_REF_CND,
+    **_NDM_LTX_REINF,
+    **_NDM_CALIB,
+}
+
+__version__ = "1.9.5"
+WEB_DIRECTORY = "./web"
+__all__ = ['NODE_CLASS_MAPPINGS', 'NODE_DISPLAY_NAME_MAPPINGS', 'WEB_DIRECTORY', '__version__']

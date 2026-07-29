@@ -1,0 +1,57 @@
+# ComfyUI Models - ВСІ типи моделей
+models/
+**/models/
+*.safetensors
+*.pth
+*.pt
+*.ckpt
+*.bin
+*.onnx
+*.gguf
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+.env
+*.egg-info/
+dist/
+build/
+
+# OS
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# IDE
+.vscode/
+.idea/
+*.sublime-*
+
+# ComfyUI specific
+user/
+output/
+temp/
+*.log
+
+# Documentation builds
+docs/_build/
+site/
+
+# Test coverage
+.coverage
+htmlcov/
+.pytest_cache/
+
+# Package manager
+node_modules/
+package-lock.json
+yarn.lock
+
+# Temporary files
+*.tmp
+*.temp
+~$*

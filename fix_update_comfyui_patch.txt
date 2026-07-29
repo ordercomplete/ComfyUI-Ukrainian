@@ -1,0 +1,31 @@
+# Це патч-файл для виправлення помилки в comfyui_manager/legacy/manager_server.py
+# 
+# ПРОБЛЕМА:
+# На рядку 787 викликається `await update_comfyui(None)`, але функція `update_comfyui`
+# очікує `request: web.Request` і викликає `manager_security.reject_simple_form_post(request)`,
+# що викликає помилку `AttributeError: 'NoneType' object has no attribute 'content_type'`
+#
+# РІШЕННЯ:
+# Замінити рядок 787:
+#     await update_comfyui(None)
+# на:
+#     temp_queue_batch.append(("update-comfyui", ('comfyui', core.get_config()['update_policy'] != 'nightly-comfyui')))
+#
+# Це те, що робить функція `update_comfyui` (рядок 1603-1604)
+
+# Патч для рядка 786-787:
+# БУЛО:
+#         elif k == 'update_comfyui':
+#             await update_comfyui(None)
+#
+# СТАЛО:
+#         elif k == 'update_comfyui':
+#             temp_queue_batch.append(("update-comfyui", ('comfyui', core.get_config()['update_policy'] != 'nightly-comfyui')))
+
+# Щоб застосувати патч, відкрийте файл:
+# D:\GEN\ComfyUI\python_embeded\Lib\site-packages\comfyui_manager\legacy\manager_server.py
+#
+# Знайдіть рядок 787 і замініть:
+#     await update_comfyui(None)
+# на:
+#     temp_queue_batch.append(("update-comfyui", ('comfyui', core.get_config()['update_policy'] != 'nightly-comfyui')))
