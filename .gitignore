@@ -55,3 +55,24 @@ yarn.lock
 *.tmp
 *.temp
 ~$*
+
+# Python embedded
+python_embeded/
+python_embeded_*/
+**/python_embeded/
+
+# ComfyUI runtime folders
+models/
+output/
+user/
+temp/
+*.log
+
+# Large binary files (models)
+*.safetensors
+*.pth
+*.pt
+*.ckpt
+*.bin
+*.onnx
+*.gguf
