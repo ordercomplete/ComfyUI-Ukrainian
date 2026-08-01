@@ -29,3 +29,28 @@
 #     await update_comfyui(None)
 # на:
 #     temp_queue_batch.append(("update-comfyui", ('comfyui', core.get_config()['update_policy'] != 'nightly-comfyui')))
+
+# ============================================================================
+# ПАТЧ 2: Ін'єкція скрипта перекладу Manager V4.2.1 українською
+# ============================================================================
+# ПРОБЛЕМА:
+# ComfyUI Manager V4.2.1 не має системи перекладу. Текст жорстко закодований в JS.
+# Потрібно підключити скрипт перекладу до кожної HTML сторінки ComfyUI.
+#
+# РІШЕННЯ:
+# Додати <script src="/comfyui-manager-locale/uk.js"></script> перед </head>
+# в index.html ComfyUI frontend.
+#
+# ШЛЯХИ:
+# - index.html: D:\ComfyUI-Ukrainian\comfyui_frontend_package\static\index.html
+# - uk.js: custom_nodes\comfyui-manager-locale\web\manager-locale-loader.js
+#
+# Щоб застосувати патч:
+# 1. Знайти </head> в index.html
+# 2. Додати перед ним: <script src="/comfyui-manager-locale/uk.js"></script>
+#
+# ПРИМІТКА:
+# Цей патч застосовується автоматично prestartup_script.py
+# при кожному запуску ComfyUI.
+# При оновленні ComfyUI index.html буде перезаписаний,
+# але prestartup_script.py знову застосує патч.
