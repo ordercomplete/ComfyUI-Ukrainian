@@ -2,6 +2,34 @@
 
 ## 2026-08-01
 
+### ✅ Git push — залито на GitHub (2026-08-01 18:30)
+**Час:** 2026-08-01 18:30
+- ✅ `git push origin main` — успішно
+- **Remote:** `github.com/ordercomplete/ComfyUI-Ukrainian.git`
+- **Бранч:** `main`
+
+**Статистика:**
+| Параметр | Значення |
+|----------|----------|
+| Об'єктів | 1074 |
+| Розмір | 22.52 MiB |
+| Швидкість | 5.27 MiB/s |
+
+**Що залито:**
+- ✅ `comfyui_frontend_package/` — 953 файли фронтенду (92.59 MB)
+- ✅ `locales/uk/` — українські переклади (4 файли)
+- ✅ `scripts/update_comfyui.ps1` — скрипт безпечного оновлення
+- ✅ `update_comfyui.bat` — батник для запуску
+- ✅ `PLAN_and_INSTRUCTION/UPDATES_GUIDE.md` — повний гайд з оновлень
+- ✅ `.github/skills/context-management/SKILL.md` — оптимізація порогів (50/70/80)
+- ✅ `.gitignore` — ігнорування файлів
+- ✅ `main.py` — comfy_aimdo ImportError handling
+
+**Commit message:**
+```
+feat: ComfyUI-Ukrainian update - frontend package, locale structure, safe update script
+```
+
 ### ✅ Створено скрипт безпечного оновлення (2026-08-01 18:00)
 **Час:** 2026-08-01 18:00
 - ✅ Створено `scripts/update_comfyui.ps1` — PowerShell скрипт
