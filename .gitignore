@@ -33,9 +33,12 @@ Thumbs.db
 
 # ComfyUI specific
 user/
+input/
 output/
-temp/
-*.log
+# temp/ - не ігноруємо, тут клони для порівняння
+temp/*.pyc
+temp/__pycache__/
+temp/*.log
 
 # Documentation builds
 docs/_build/

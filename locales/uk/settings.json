@@ -1,0 +1,507 @@
+{
+  "Comfy-Desktop_AutoUpdate": {
+    "name": "Автоматичне оновлення Comfy-Desktop"
+  },
+  "Comfy-Desktop_SendStatistics": {
+    "name": "Надсилати статистику"
+  },
+  "Comfy-Desktop_UV_PypiInstallMirror": {
+    "name": "Дзеркало PyPI для встановлення",
+    "tooltip": "Встановлює зеркало PyPI для UV"
+  },
+  "Comfy-Desktop_UV_PythonInstallMirror": {
+    "name": "Дзеркало Python для встановлення",
+    "tooltip": "Встановлює дзеркало Python для UV"
+  },
+  "Comfy-Desktop_UV_TorchInstallMirror": {
+    "name": "Дзеркало Torch для встановлення",
+    "tooltip": "Встановлює дзеркало Torch для UV"
+  },
+  "Comfy-Desktop_WindowStyle": {
+    "name": "Стиль вікна",
+    "tooltip": "Вибирає стиль вікна Comfy-Desktop",
+    "options": {
+      "default": "За замовчуванням",
+      "custom": "Нетиповий"
+    }
+  },
+  "Comfy_Appearance_DisableAnimations": {
+    "name": "Вимкнути анімації",
+    "tooltip": "Вимикає анімації інтерфейсу"
+  },
+  "Comfy_Canvas_BackgroundImage": {
+    "name": "Зображення фону полотна",
+    "tooltip": "Встановлює зображення фону для полотна"
+  },
+  "Comfy_Canvas_LeftMouseClickBehavior": {
+    "name": "Поведінка лівого кліку миші",
+    "options": {
+      "Panning": "Переміщення",
+      "Select": "Вибір"
+    }
+  },
+  "Comfy_Canvas_MouseWheelScroll": {
+    "name": "Прокрутка колеса миші",
+    "options": {
+      "Panning": "Переміщення",
+      "Zoom in/out": "Збільшення/зменшення"
+    }
+  },
+  "Comfy_Canvas_NavigationMode": {
+    "name": "Режим навігації полотна",
+    "options": {
+      "Standard (New)": "Стандартний (Новий)",
+      "Drag Navigation": "Перетягування",
+      "Custom": "Нетиповий"
+    }
+  },
+  "Comfy_Canvas_SelectionToolbox": {
+    "name": "Панель інструментів вибору",
+    "tooltip": "Показує панель інструментів вибору на полотні"
+  },
+  "Comfy_ConfirmClear": {
+    "name": "Підтверджувати очищення"
+  },
+  "Comfy_DevMode": {
+    "name": "Режим розробника"
+  },
+  "Comfy_DisableFloatRounding": {
+    "name": "Вимкнути округлення дробових чисел",
+    "tooltip": "Не округлює значення дробових чисел до відображуваної точності"
+  },
+  "Comfy_DisableSliders": {
+    "name": "Вимкнути повзунки"
+  },
+  "Comfy_DOMClippingEnabled": {
+    "name": "Увімкнути обрізку DOM"
+  },
+  "Comfy_EditAttention_Delta": {
+    "name": "Дельта редагування уваги"
+  },
+  "Comfy_EnableTooltips": {
+    "name": "Увімкнути підказки"
+  },
+  "Comfy_EnableWorkflowViewRestore": {
+    "name": "Відновлення перегляду робочого процесу"
+  },
+  "Comfy_Execution_PreviewMethod": {
+    "name": "Метод попереднього перегляду виконання",
+    "tooltip": "Вибирає метод попереднього перегляду під час виконання",
+    "options": {
+      "default": "За замовчуванням",
+      "none": "Немає",
+      "auto": "Авто",
+      "latent2rgb": "Latent2RGB",
+      "taesd": "TAESD"
+    }
+  },
+  "Comfy_FloatRoundingPrecision": {
+    "name": "Точність округлення дробових чисел",
+    "tooltip": "Встановлює кількість десяткових розрядів для округлення"
+  },
+  "Comfy_Graph_AutoPanSpeed": {
+    "name": "Швидкість автопереміщення графа",
+    "tooltip": "Встановлює швидкість автоматичного переміщення полотна"
+  },
+  "Comfy_Graph_CanvasInfo": {
+    "name": "Інформація про полотно"
+  },
+  "Comfy_Graph_CanvasMenu": {
+    "name": "Меню полотна"
+  },
+  "Comfy_Graph_CtrlShiftZoom": {
+    "name": "Масштаб Ctrl+Shift"
+  },
+  "Comfy_Graph_DeduplicateSubgraphNodeIds": {
+    "name": "Дедуплікація ID вузлів підграфів",
+    "tooltip": "Видаляє дублікати ID вузлів підграфів"
+  },
+  "Comfy_Graph_LinkMarkers": {
+    "name": "Маркери зв'язків",
+    "options": {
+      "None": "Немає",
+      "Circle": "Коло",
+      "Arrow": "Стрілка"
+    }
+  },
+  "Comfy_Graph_LiveSelection": {
+    "name": "Живий вибір",
+    "tooltip": "Показує попередній перегляд вибору у реальному часі"
+  },
+  "Comfy_Graph_ZoomSpeed": {
+    "name": "Швидкість масштабування"
+  },
+  "Comfy_Group_DoubleClickTitleToEdit": {
+    "name": "Подвійний клік для редагування заголовка групи"
+  },
+  "Comfy_GroupSelectedNodes_Padding": {
+    "name": "Відступ групи вибраних вузлів"
+  },
+  "Comfy_LinkRelease_Action": {
+    "name": "Дія при відпусканні зв'язку",
+    "options": {
+      "context menu": "контекстне меню",
+      "search box": "поле пошуку",
+      "no action": "без дії"
+    }
+  },
+  "Comfy_LinkRelease_ActionShift": {
+    "name": "Дія при відпусканні зв'язку (Shift)",
+    "options": {
+      "context menu": "контекстне меню",
+      "search box": "поле пошуку",
+      "no action": "без дії"
+    }
+  },
+  "Comfy_LinkRenderMode": {
+    "name": "Режим відображення зв'язків",
+    "tooltip": "Вибирає спосіб відображення зв'язків між вузлами",
+    "options": {
+      "Straight": "Прямі",
+      "Linear": "Лінійні",
+      "Spline": "Сплайни",
+      "Hidden": "Приховані"
+    }
+  },
+  "Comfy_Load3D_3DViewerEnable": {
+    "name": "Увімкнути 3D переглядач",
+    "tooltip": "Увімкнує перегляд 3D-моделей"
+  },
+  "Comfy_Load3D_BackgroundColor": {
+    "name": "Колір фону 3D",
+    "tooltip": "Встановлює колір фону для 3D-переглядача"
+  },
+  "Comfy_Load3D_CameraType": {
+    "name": "Тип камери 3D",
+    "tooltip": "Вибирає тип камери для 3D-переглядача",
+    "options": {
+      "perspective": "перспектива",
+      "orthographic": "ортографічна"
+    }
+  },
+  "Comfy_Load3D_LightAdjustmentIncrement": {
+    "name": "Крок регулювання світла",
+    "tooltip": "Встановлює крок зміни інтенсивності світла"
+  },
+  "Comfy_Load3D_LightIntensity": {
+    "name": "Інтенсивність світла",
+    "tooltip": "Встановлює інтенсивність освітлення 3D-сцени"
+  },
+  "Comfy_Load3D_LightIntensityMaximum": {
+    "name": "Максимальна інтенсивність світла",
+    "tooltip": "Встановлює максимальну інтенсивність світла"
+  },
+  "Comfy_Load3D_LightIntensityMinimum": {
+    "name": "Мінімальна інтенсивність світла",
+    "tooltip": "Встановлює мінімальну інтенсивність світла"
+  },
+  "Comfy_Load3D_PLYEngine": {
+    "name": "Движок PLY",
+    "tooltip": "Вибирає движок для завантаження файлів PLY",
+    "options": {
+      "threejs": "threejs",
+      "fastply": "fastply"
+    }
+  },
+  "Comfy_Load3D_ShowGrid": {
+    "name": "Показувати сітку",
+    "tooltip": "Показує сітку на 3D-сцені"
+  },
+  "Comfy_Locale": {
+    "name": "Мова інтерфейсу"
+  },
+  "Comfy_MaskEditor_BrushAdjustmentSpeed": {
+    "name": "Швидкість регулювання киля",
+    "tooltip": "Встановлює швидкість зміни розміру киля маски"
+  },
+  "Comfy_MaskEditor_UseDominantAxis": {
+    "name": "Використовувати домінуючу осі",
+    "tooltip": "Обмежує рух киля до домінуючої осі"
+  },
+  "Comfy_ModelLibrary_AutoLoadAll": {
+    "name": "Автоматично завантажувати всі моделі",
+    "tooltip": "Автоматично завантажує всі моделі з бібліотеки"
+  },
+  "Comfy_ModelLibrary_NameFormat": {
+    "name": "Формат назви моделі",
+    "tooltip": "Вибирає формат відображення назви моделі",
+    "options": {
+      "filename": "ім'я файлу",
+      "title": "заголовок"
+    }
+  },
+  "Comfy_Node_AllowImageSizeDraw": {
+    "name": "Дозволяти малювання розміру зображення"
+  },
+  "Comfy_Node_AlwaysShowAdvancedWidgets": {
+    "name": "Завжди показувати розширені віджети",
+    "tooltip": "Завжди відображає розширені віджити вузлів"
+  },
+  "Comfy_Node_AutoSnapLinkToSlot": {
+    "name": "Автоматично прив'язувати зв'язок до слоту",
+    "tooltip": "Автоматично прив'язує зв'язок до найближчого слоту"
+  },
+  "Comfy_Node_BypassAllLinksOnDelete": {
+    "name": "Обхід всіх зв'язків при видаленні",
+    "tooltip": "Обхідить всі зв'язки при видаленні вузла"
+  },
+  "Comfy_Node_DoubleClickTitleToEdit": {
+    "name": "Подвійний клік для редагування заголовка"
+  },
+  "Comfy_Node_MiddleClickRerouteNode": {
+    "name": "Середній клік для перенаправлення вузла"
+  },
+  "Comfy_Node_Opacity": {
+    "name": "Непрозорість вузла"
+  },
+  "Comfy_Node_ShowDeprecated": {
+    "name": "Показувати застарілі вузли",
+    "tooltip": "Показує застарілі та експериментальні вузли"
+  },
+  "Comfy_Node_ShowExperimental": {
+    "name": "Показувати експериментальні вузли",
+    "tooltip": "Показує експериментальні вузли"
+  },
+  "Comfy_Node_SnapHighlightsNode": {
+    "name": "Підсвічування прив'язки вузла",
+    "tooltip": "Підсвічує вузол при прив'язці до сітки"
+  },
+  "Comfy_NodeBadge_NodeIdBadgeMode": {
+    "name": "Режим значка ID вузла",
+    "options": {
+      "None": "Немає",
+      "Show all": "Показати всі"
+    }
+  },
+  "Comfy_NodeBadge_NodeLifeCycleBadgeMode": {
+    "name": "Режим значка життєвого циклу вузла",
+    "options": {
+      "None": "Немає",
+      "Show all": "Показати всі"
+    }
+  },
+  "Comfy_NodeBadge_NodeSourceBadgeMode": {
+    "name": "Режим значка джерела вузла",
+    "options": {
+      "None": "Немає",
+      "Show all": "Показати всі",
+      "Hide built-in": "Приховати вбудовані"
+    }
+  },
+  "Comfy_NodeBadge_ShowApiPricing": {
+    "name": "Показувати ціни API"
+  },
+  "Comfy_NodeLibrary_NewDesign": {
+    "name": "Новий дизайн бібліотеки вузлів",
+    "tooltip": "Використовує новий дизайн для бібліотеки вузлів"
+  },
+  "Comfy_NodeReplacement_Enabled": {
+    "name": "Заміна вузлів увімкнена",
+    "tooltip": "Дозволяє автоматичну заміну вузлів"
+  },
+  "Comfy_NodeSearchBoxImpl": {
+    "name": "Реалізація поля пошуку вузлів",
+    "options": {
+      "default": "за замовчуванням",
+      "v1 (legacy)": "v1 (спадщина)",
+      "litegraph (legacy)": "litegraph (спадщина)"
+    }
+  },
+  "Comfy_NodeSearchBoxImpl_FollowCursor": {
+    "name": "Поле пошуку слідує за курсором",
+    "tooltip": "Розташовує поле пошуку біля курсору"
+  },
+  "Comfy_NodeSearchBoxImpl_NodePreview": {
+    "name": "Попередній перегляд вузла у полі пошуку",
+    "tooltip": "Показує попередній перегляд вузла у полі пошуку"
+  },
+  "Comfy_NodeSearchBoxImpl_ShowCategory": {
+    "name": "Показувати категорію у пошуку",
+    "tooltip": "Відображає категорію вузла у полі пошуку"
+  },
+  "Comfy_NodeSearchBoxImpl_ShowIdName": {
+    "name": "Показувати ID та ім'я в пошуку",
+    "tooltip": "Відображає ID та ім'я вузла у полі пошуку"
+  },
+  "Comfy_NodeSearchBoxImpl_ShowNodeFrequency": {
+    "name": "Показувати частоту використання вузла",
+    "tooltip": "Відображає частоту використання вузла у пошуку"
+  },
+  "Comfy_NodeSuggestions_number": {
+    "name": "Кількість пропозицій вузлів",
+    "tooltip": "Встановлює кількість пропозицій у полі пошуку"
+  },
+  "Comfy_Notification_ShowVersionUpdates": {
+    "name": "Показувати оновлення версії",
+    "tooltip": "Показує сповіщення про оновлення версії"
+  },
+  "Comfy_Pointer_ClickBufferTime": {
+    "name": "Час буферу кліку",
+    "tooltip": "Встановлює часовий буфер між кліками миші"
+  },
+  "Comfy_Pointer_ClickDrift": {
+    "name": "Відхилення кліку",
+    "tooltip": "Встановлює допустиме відхилення курсору під час кліку"
+  },
+  "Comfy_Pointer_DoubleClickTime": {
+    "name": "Час подвійного кліку",
+    "tooltip": "Встановлює інтервал подвійного кліку миші"
+  },
+  "Comfy_PreviewFormat": {
+    "name": "Формат попереднього перегляду",
+    "tooltip": "Вибирає формат попередніх переглядів результатів"
+  },
+  "Comfy_PromptFilename": {
+    "name": "Ім'я файлу промпту"
+  },
+  "Comfy_Queue_MaxHistoryItems": {
+    "name": "Максимальна кількість елементів історії черги",
+    "tooltip": "Встановлює максимальну кількість збережених елементів черги"
+  },
+  "Comfy_Queue_QPOV2": {
+    "name": "Черга QPOV2",
+    "tooltip": "Використовує нову версію черги"
+  },
+  "Comfy_QueueButton_BatchCountLimit": {
+    "name": "Ліміт кількості партій",
+    "tooltip": "Встановлює ліміт кількості партій для черги"
+  },
+  "Comfy_RightSidePanel_ShowErrorsTab": {
+    "name": "Показувати вкладку помилок",
+    "tooltip": "Відображає вкладку помилок у правій панелі"
+  },
+  "Comfy_Sidebar_Location": {
+    "name": "Розташування бічної панелі",
+    "options": {
+      "left": "ліворуч",
+      "right": "праворуч"
+    }
+  },
+  "Comfy_Sidebar_Size": {
+    "name": "Розмір бічної панелі",
+    "options": {
+      "normal": "нормальний",
+      "small": "малий"
+    }
+  },
+  "Comfy_Sidebar_Style": {
+    "name": "Стиль бічної панелі",
+    "options": {
+      "floating": "плаваючий",
+      "connected": "підключений"
+    }
+  },
+  "Comfy_Sidebar_UnifiedWidth": {
+    "name": "Єдиний розмір бічної панелі"
+  },
+  "Comfy_SnapToGrid_GridSize": {
+    "name": "Розмір сітки прив'язки",
+    "tooltip": "Встановлює розмір сітки для прив'язки вузлів"
+  },
+  "Comfy_TextareaWidget_FontSize": {
+    "name": "Розмір шрифту текстового поля"
+  },
+  "Comfy_TextareaWidget_Spellcheck": {
+    "name": "Перевірка орфографії"
+  },
+  "Comfy_TreeExplorer_ItemPadding": {
+    "name": "Відступ елементів дерева"
+  },
+  "Comfy_UI_TabBarLayout": {
+    "name": "Розташування вкладок інтерфейсу",
+    "tooltip": "Вибирає розташування вкладок інтерфейсу",
+    "options": {
+      "Default": "За замовчуванням",
+      "Legacy": "Спадщина"
+    }
+  },
+  "Comfy_UseNewMenu": {
+    "name": "Використовувати нове меню",
+    "tooltip": "Використовує новий верхній інтерфейс меню",
+    "options": {
+      "Disabled": "Вимкнено",
+      "Top": "Вгорі"
+    }
+  },
+  "Comfy_Validation_Workflows": {
+    "name": "Валідація робочих процесів"
+  },
+  "Comfy_VueNodes_Enabled": {
+    "name": "Vue-вузли увімкнені",
+    "tooltip": "Увімкнує Vue-вузли"
+  },
+  "Comfy_WidgetControlMode": {
+    "name": "Режим керування віджитами",
+    "tooltip": "Вибирає розташування віджитів вузла",
+    "options": {
+      "before": "до",
+      "after": "після"
+    }
+  },
+  "Comfy_Window_UnloadConfirmation": {
+    "name": "Підтвердження виходу"
+  },
+  "Comfy_Workflow_AutoSave": {
+    "name": "Автозбереження робочого процесу",
+    "options": {
+      "off": "вимкнено",
+      "after delay": "через затримку"
+    }
+  },
+  "Comfy_Workflow_AutoSaveDelay": {
+    "name": "Затримка автозбереження",
+    "tooltip": "Встановлює затримку перед автозбереженням"
+  },
+  "Comfy_Workflow_ConfirmDelete": {
+    "name": "Підтверджувати видалення"
+  },
+  "Comfy_Workflow_Persist": {
+    "name": "Запам'ятовувати робочий процес"
+  },
+  "Comfy_Workflow_ShowMissingModelsWarning": {
+    "name": "Попередження про відсутні моделі"
+  },
+  "Comfy_Workflow_SortNodeIdOnSave": {
+    "name": "Сортувати ID вузлів при збереженні"
+  },
+  "Comfy_Workflow_WarnBlueprintOverwrite": {
+    "name": "Попередження про перезапис блюпринту"
+  },
+  "Comfy_Workflow_WorkflowTabsPosition": {
+    "name": "Розташування вкладок робочого процесу",
+    "options": {
+      "Sidebar": "бічна панель",
+      "Topbar": "верхня панель"
+    }
+  },
+  "LiteGraph_Canvas_MaximumFps": {
+    "name": "Максимальна кадрова частота полотна",
+    "tooltip": "Встановлює максимальну кадрову частоту полотна"
+  },
+  "LiteGraph_Canvas_MinFontSizeForLOD": {
+    "name": "Мінімальний розмір шрифту для LOD",
+    "tooltip": "Встановлює мінімальний розмір шрифту для рівня деталізації"
+  },
+  "LiteGraph_ContextMenu_Scaling": {
+    "name": "Масштаб контекстного меню"
+  },
+  "LiteGraph_Group_SelectChildrenOnClick": {
+    "name": "Вибір дочірніх елементів групи при кліку",
+    "tooltip": "Автоматично вибирає дочірні вузли групи при кліку"
+  },
+  "LiteGraph_Node_DefaultPadding": {
+    "name": "Відступ вузла за замовчуванням",
+    "tooltip": "Встановлює відступ вмісту всередині вузла"
+  },
+  "LiteGraph_Node_TooltipDelay": {
+    "name": "Затримка підказки вузла"
+  },
+  "LiteGraph_Reroute_SplineOffset": {
+    "name": "Зсув сплайну перенаправлення",
+    "tooltip": "Встановлює зсув сплайну для перенаправлених зв'язків"
+  },
+  "pysssss_SnapToGrid": {
+    "name": "Прив'язка до сітки",
+    "tooltip": "Прив'язує вузли до сітки"
+  }
+}
