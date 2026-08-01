@@ -30,6 +30,66 @@ Typical usage (expected):
 1. Copy the `uk` folder into the appropriate locales directory of your ComfyUI frontend installation.
 2. Select Ukrainian language in ComfyUI settings (`Comfy > Locale > Language`).
 
+## Installation
+
+### Prerequisites
+
+- Python 3.10+
+- [ComfyUI](https://github.com/Comfy-Org/ComfyUI) installed
+- [ComfyUI Frontend](https://github.com/Comfy-Org/ComfyUI_frontend) built
+
+### Custom Nodes
+
+This repository includes **24 custom nodes** in `custom_nodes/`. They are **not tracked by Git** because each has its own `.git` repository.
+
+To install them after cloning:
+
+```powershell
+# Run the automatic installer
+.\scripts\install_custom_nodes.ps1
+
+# Or manually clone each node
+cd custom_nodes
+git clone https://github.com/yolain/ComfyUI-Easy-Use.git
+git clone https://github.com/ltdrdata/ComfyUI-Impact-Pack.git
+git clone https://github.com/kijai/ComfyUI-KJNodes.git
+# ... see INSTALL.md for full list
+```
+
+### Full installation guide
+
+See [INSTALL.md](INSTALL.md) for complete installation instructions.
+
+## Installation
+
+### Prerequisites
+
+- Python 3.10+
+- [ComfyUI](https://github.com/Comfy-Org/ComfyUI) installed
+- [ComfyUI Frontend](https://github.com/Comfy-Org/ComfyUI_frontend) built
+
+### Custom Nodes
+
+This repository includes **24 custom nodes** in `custom_nodes/`. They are **not tracked by Git** because each has its own `.git` repository.
+
+To install them after cloning:
+
+```powershell
+# Run the automatic installer
+.\scripts\install_custom_nodes.ps1
+
+# Or manually clone each node
+cd custom_nodes
+git clone https://github.com/yolain/ComfyUI-Easy-Use.git
+git clone https://github.com/ltdrdata/ComfyUI-Impact-Pack.git
+git clone https://github.com/kijai/ComfyUI-KJNodes.git
+# ... see INSTALL.md for full list
+```
+
+### Full installation guide
+
+See [INSTALL.md](INSTALL.md) for complete installation instructions.
+
 ## Contributing
 
 Contributions, improvements and corrections are welcome.  
