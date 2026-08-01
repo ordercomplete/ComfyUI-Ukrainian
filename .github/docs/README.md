@@ -12,7 +12,8 @@
 
 ```
 .github/
-├── README.md                    ← цей файл (огляд)
+├── docs/
+│   └── README.md                ← цей файл (огляд, переміщено щоб уникнути конфлікту з GitHub profile README)
 ├── STRUCTURE.md                 ← повна структура з описами кожного файлу
 ├── .prompt.md                   ← точка входу для Copilot
 ├── agents/
