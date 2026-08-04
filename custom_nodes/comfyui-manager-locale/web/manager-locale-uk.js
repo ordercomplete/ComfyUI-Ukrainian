@@ -1,6 +1,6 @@
-// Manager V4.2.1 Ukrainian Localization Interceptor
-// Перекладає діалог Manager без змін у основному коді
-// Використовує MutationObserver для перехоплення рендеру
+// Manager V4.2.1 Ukrainian Localization — Single File Solution
+// Містить словник перекладів + MutationObserver для перехоплення рендеру
+// Підключається напряму через <script> тег в index.html (без окремих запитів)
 
 (function() {
   'use strict';
@@ -46,6 +46,12 @@
     'EXPERIMENTAL': 'ЕКСПЕРИМЕНТАЛЬНЕ',
     'Snapshot Manager': 'Менеджер знімків',
     'Install PIP packages': 'Встановити PIP пакунки',
+    'Search': 'Пошук',
+    'Filter dropdown': 'Фільтр',
+    'Version dialog': 'Діалог версії',
+    'Select': 'Вибрати',
+    'Cancel': 'Скасувати',
+    'Apply': 'Застосувати',
 
     // === Menu Column 2 - Основні кнопки ===
     'Custom Nodes Manager': 'Менеджер кастомних нод',
@@ -77,6 +83,10 @@
     // === Footer ===
     'ComfyUI v0.18.2 is released': 'Випущено ComfyUI v0.18.2',
     'ComfyUI:': 'ComfyUI:',
+    'Used In Workflow': 'Використано у воркфлоу',
+    'Check Update': 'Перевірити оновлення',
+    'Stop': 'Зупинити',
+    'Check Missing': 'Перевірити відсутні',
   };
 
   // ==========================================

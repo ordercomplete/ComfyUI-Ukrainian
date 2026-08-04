@@ -717,5 +717,85 @@
   "loramanager_strength_step": {
     "name": "Крок регулювання сили",
     "tooltip": "Розмір кроку для регулювання сили LoRA за допомогою кнопок зі стрілками або клавіатури (типово: 0.05)"
+  },
+  // TTS Audio Suite — Ukrainian translations (2026-08-03)
+  "TTSAudioSuite.InlineEditTags.Precision": {
+    "name": "Точність моделі для вбудованих тегів редагування",
+    "tooltip": "Torch dtype для моделі Step Audio EditX при використанні вбудованих тегів редагування (<Laughter>, <style:whisper> тощо).\nВикористовуйте int8 або int4 для систем з малою кількістю VRAM.\nПримітка: Це стосується ТІЛЬКО вбудованих тегів редагування. Коли використовуєте ноду Step Audio EditX напряму, використовуйте параметр точності ноди.",
+    "options": {
+      "auto": "авто",
+      "fp32": "fp32",
+      "fp16": "fp16",
+      "bf16": "bf16",
+      "int8": "int8",
+      "int4": "int4"
+    }
+  },
+  "TTSAudioSuite.InlineEditTags.Device": {
+    "name": "Пристрій для вбудованих тегів редагування",
+    "tooltip": "Пристрій для моделі Step Audio EditX при використанні вбудованих тегів редагування (<Laughter>, <style:whisper> тощо).\nAuto обирає найкращий доступний пристрій (cuda > xpu > cpu).\nПримітка: Це стосується ТІЛЬКО вбудованих тегів редагування. Коли використовуєте ноду Step Audio EditX напряму, використовуйте параметр точності ноди.",
+    "options": {
+      "auto": "авто",
+      "cuda": "cuda",
+      "cpu": "cpu",
+      "xpu": "xpu"
+    }
+  },
+  "TTSAudioSuite.RestoreTags.VCEngine": {
+    "name": "Двигун конвертації голосу для тегів <restore>",
+    "tooltip": "Двигун конвертації голосу, що використовується для тегів <restore> в постобробці.\nChatterBox 23-мови (типовий): Найкраща якість, підтримує 23 мови\nChatterBox: Оригінальний двигун, англійська/німецька/норвезька\nCosyVoice: Нова опція з нативною CosyVoice3 VC (вихід 24кГц)",
+    "options": {
+      "chatterbox_23lang": "ChatterBox 23-мови",
+      "chatterbox": "ChatterBox",
+      "cosyvoice": "CosyVoice"
+    }
+  },
+  "TTSAudioSuite.RestoreTags.CosyVoiceVariant": {
+    "name": "Варіант моделі CosyVoice для тегів <restore>",
+    "tooltip": "Варіант моделі CosyVoice для відновлення голосу (застосовується тільки коли двигун VC — CosyVoice).\nRL: Fun-CosyVoice3-0.5B-RL (варіант з підсиленням навчанням, типовий)\nstandard: Fun-CosyVoice3-0.5B (стандартний варіант)",
+    "options": {
+      "RL": "RL",
+      "standard": "стандартний"
+    }
+  },
+  // Underscore-normalized keys for TTS Audio Suite (2026-08-03)
+  "TTSAudioSuite_InlineEditTags_Precision": {
+    "name": "Точність моделі для вбудованих тегів редагування",
+    "tooltip": "Torch dtype для моделі Step Audio EditX при використанні вбудованих тегів редагування (<Laughter>, <style:whisper> тощо).\nВикористовуйте int8 або int4 для систем з малою кількістю VRAM.\nПримітка: Це стосується ТІЛЬКО вбудованих тегів редагування. Коли використовуєте ноду Step Audio EditX напряму, використовуйте параметр точності ноди.",
+    "options": {
+      "auto": "авто",
+      "fp32": "fp32",
+      "fp16": "fp16",
+      "bf16": "bf16",
+      "int8": "int8",
+      "int4": "int4"
+    }
+  },
+  "TTSAudioSuite_InlineEditTags_Device": {
+    "name": "Пристрій для вбудованих тегів редагування",
+    "tooltip": "Пристрій для моделі Step Audio EditX при використанні вбудованих тегів редагування (<Laughter>, <style:whisper> тощо).\nAuto обирає найкращий доступний пристрій (cuda > xpu > cpu).\nПримітка: Це стосується ТІЛЬКО вбудованих тегів редагування. Коли використовуєте ноду Step Audio EditX напряму, використовуйте параметр точності ноди.",
+    "options": {
+      "auto": "авто",
+      "cuda": "cuda",
+      "cpu": "cpu",
+      "xpu": "xpu"
+    }
+  },
+  "TTSAudioSuite_RestoreTags_VCEngine": {
+    "name": "Двигун конвертації голосу для тегів <restore>",
+    "tooltip": "Двигун конвертації голосу, що використовується для тегів <restore> в постобробці.\nChatterBox 23-мови (типовий): Найкраща якість, підтримує 23 мови\nChatterBox: Оригінальний двигун, англійська/німецька/норвезька\nCosyVoice: Нова опція з нативною CosyVoice3 VC (вихід 24кГц)",
+    "options": {
+      "chatterbox_23lang": "ChatterBox 23-мови",
+      "chatterbox": "ChatterBox",
+      "cosyvoice": "CosyVoice"
+    }
+  },
+  "TTSAudioSuite_RestoreTags_CosyVoiceVariant": {
+    "name": "Варіант моделі CosyVoice для тегів <restore>",
+    "tooltip": "Варіант моделі CosyVoice для відновлення голосу (застосовується тільки коли двигун VC — CosyVoice).\nRL: Fun-CosyVoice3-0.5B-RL (варіант з підсиленням навчанням, типовий)\nstandard: Fun-CosyVoice3-0.5B (стандартний варіант)",
+    "options": {
+      "RL": "RL",
+      "standard": "стандартний"
+    }
   }
 }

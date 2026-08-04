@@ -1,10 +1,14 @@
-# Prompt Instructions
+# Prompt Instructions 
+(детально в `/.github/STRUCTURE.md`)
 
 При кожній новій сесії обов'язково прочитай файл інструкцій агента:
 
-**D:\ComfyUI-Ukrainian\.github\agents\Comfy-lady.agent.md**
+## 🚀 Як почати роботу
 
-Цей файл містить повні інструкції для роботи агента Comfy-lady.
+1. Прочитай `.github/agents/Comfy-lady.agent.md` — повні інструкції агента
+2. Для анти-циклу та очищення контексту: `.github/skills/context-management/SKILL.md`
+3. Для історії сесій, дій та помилок: `.github/skills/session-history/SKILL.md`
+4. Для перевірки локалізації: `.github/skills/localization-qa/SKILL.md`
 
 # ComfyUI Ukrainian Localization — Інструкції агента
 
@@ -24,7 +28,7 @@
 │   ├── localization-qa/SKILL.md     ← QA локалізації
 │   ├── safe-edit/SKILL.md           ← безпечне редагування
 │   ├── session-history/SKILL.md     ← історія сесій
-│   └── small-steps/SKILL.md         ← адаптивна розбивка задач
+│   └── small-steps/SKILL.md         ← адаптивна розбивка задач (рекомендації)
 ├── knowledge-base/
 │   ├── README.md                ← структура бази знань
 │   ├── code-patterns/           ← патерни коду ComfyUI
@@ -49,17 +53,10 @@ memories/
 └── errors/error-log.md          ← системні помилки та цикли
 ```
 
-## 🚀 Як почати роботу
-
-1. Прочитай `.github/agents/Comfy-lady.agent.md` — повні інструкції агента
-2. Для анти-циклу та очищення контексту: `.github/skills/context-management/SKILL.md`
-3. Для історії сесій: `.github/skills/session-history/SKILL.md`
-4. Для перевірки локалізації: `.github/skills/localization-qa/SKILL.md`
-
 ## 📊 Статистика
 
-| Категорія | Кількість |
-|-----------|----------|
-| Навички (skills) | 6 файлів |
-| База знань | 4 елементи (+ 3 підпапки) |
+| Категорія                | Кількість |
+|--------------------------|-----------|
+| Навички (skills)         | 6 файлів  |
+| База знань               | 4 елементи (+ 3 підпапки) |
 | GitHub Actions workflows | 24 файли |

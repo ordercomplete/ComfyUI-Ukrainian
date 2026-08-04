@@ -24726,5 +24726,574 @@
         "tooltip": null
       }
     }
-  }
-}
+  },
+  "Lora Loader (LoraManager)": {
+    "display_name": "Завантажувач LoRA",
+    "inputs": {
+      "model": {"name": "Модель", "tooltip": "The model used for denoising latents."},
+      "clip": {"name": "CLIP", "tooltip": "The CLIP model used for encoding text prompts."},
+      "lora_stack": {"name": "Стек LoRA", "tooltip": "Optional stack of LoRAs to apply."}
+    },
+    "outputs": {
+      "0": {"name": "MODEL", "tooltip": "The model with LoRA applied."},
+      "1": {"name": "CLIP", "tooltip": "The CLIP model with LoRA applied."},
+      "2": {"name": "trigger_words", "tooltip": "Trigger words from loaded LoRAs."},
+      "3": {"name": "loaded_loras", "tooltip": "List of loaded LoRAs in syntax format."}
+    }
+  },
+  "LoRA Text Loader (LoraManager)": {
+    "display_name": "Текстовий завантажувач LoRA",
+    "inputs": {
+      "model": {"name": "Модель", "tooltip": "The model used for denoising latents."},
+      "clip": {"name": "CLIP", "tooltip": "The CLIP model used for encoding text prompts."},
+      "lora_stack": {"name": "Стек LoRA", "tooltip": "Optional stack of LoRAs to apply."}
+    },
+    "outputs": {
+      "0": {"name": "MODEL", "tooltip": "The model with LoRA applied."},
+      "1": {"name": "CLIP", "tooltip": "The CLIP model with LoRA applied."},
+      "2": {"name": "trigger_words", "tooltip": "Trigger words from loaded LoRAs."},
+      "3": {"name": "loaded_loras", "tooltip": "List of loaded LoRAs in syntax format."}
+    }
+  },
+  "Lora Stacker (LoraManager)": {
+    "display_name": "Стекер LoRA",
+    "inputs": {
+      "text": {"name": "Текст", "tooltip": "Format: <lora:lora_name:strength> separated by spaces or punctuation"},
+      "lora_stack": {"name": "Стек LoRA", "tooltip": "Optional existing stack to append to."}
+    },
+    "outputs": {
+      "0": {"name": "LORA_STACK", "tooltip": "Combined stack of LoRAs."},
+      "1": {"name": "trigger_words", "tooltip": "Collected trigger words from all LoRAs."},
+      "2": {"name": "active_loras", "tooltip": "List of active LoRAs with their strengths."}
+    }
+  },
+  "Checkpoint Loader (LoraManager)": {
+    "display_name": "Завантажувач чекпоінта",
+    "inputs": {
+      "ckpt_name": {"name": "Назва чекпоінта", "tooltip": "The name of the checkpoint (model) to load."}
+    },
+    "outputs": {
+      "0": {"name": "MODEL", "tooltip": "The model used for denoising latents."},
+      "1": {"name": "CLIP", "tooltip": "The CLIP model used for encoding text prompts."},
+      "2": {"name": "VAE", "tooltip": "The VAE model used for encoding and decoding images."}
+    }
+  },
+  "Unet Loader (LoraManager)": {
+    "display_name": "Завантажувач UNET",
+    "inputs": {
+      "unet_name": {"name": "Назва UNET", "tooltip": "The name of the diffusion model to load."},
+      "weight_dtype": {"name": "Тип ваг", "tooltip": "The dtype to use for the model weights.", "options": ["default", "fp8_e4m3fn", "fp8_e4m3fn_fast", "fp8_e5m2"]}
+    },
+    "outputs": {
+      "0": {"name": "MODEL", "tooltip": "The diffusion model loaded with specified dtype."}
+    }
+  },
+  "TriggerWord Toggle (LoraManager)": {
+    "display_name": "Перемикач тригерних слів",
+    "inputs": {
+      "group_mode": {"name": "Груповий режим", "tooltip": "When enabled, treats each group of trigger words as a single toggleable unit."},
+      "default_active": {"name": "Типове активне", "tooltip": "Sets the default initial state (active or inactive) when trigger words are added."},
+      "allow_strength_adjustment": {"name": "Дозволити налаштування сили", "tooltip": "Enable mouse wheel adjustment of each trigger word's strength."}
+    },
+    "outputs": {
+      "0": {"name": "filtered_trigger_words", "tooltip": "Processed trigger words string."}
+    }
+  },
+  "Prompt (LoraManager)": {
+    "display_name": "Запит (Prompt)",
+    "inputs": {
+      "text": {"name": "Текст", "tooltip": "The text to be encoded. Wildcard references inserted with /wildcard are expanded at runtime."},
+      "clip": {"name": "CLIP", "tooltip": "The CLIP model used for encoding the text."},
+      "seed": {"name": "Сід", "tooltip": "Optional seed for wildcard generation. Leave unconnected for non-deterministic wildcard expansion."},
+      "trigger_words1": {"name": "Тригерні слова 1", "tooltip": "Trigger words to prepend. Connect to add more inputs."}
+    },
+    "outputs": {
+      "0": {"name": "CONDITIONING", "tooltip": "A conditioning containing the embedded text used to guide the diffusion model."},
+      "1": {"name": "PROMPT", "tooltip": "The final prompt string with expanded wildcards and trigger words."}
+    }
+  },
+  "Text (LoraManager)": {
+    "display_name": "Текст",
+    "inputs": {
+      "text": {"name": "Текст", "tooltip": "The text output. Wildcard references inserted with /wildcard are expanded at runtime."},
+      "seed": {"name": "Сід", "tooltip": "Optional seed for wildcard generation. Leave unconnected for non-deterministic wildcard expansion."}
+    },
+    "outputs": {
+      "0": {"name": "STRING", "tooltip": "The text output with expanded wildcards."}
+    }
+  },
+  "Lora Stack Combiner (LoraManager)": {
+    "display_name": "Комбінер стеків LoRA",
+    "inputs": {
+      "lora_stack_a": {"name": "Стек LoRA A", "tooltip": "First stack to combine."},
+      "lora_stack_b": {"name": "Стек LoRA B", "tooltip": "Second stack to combine."}
+    },
+    "outputs": {
+      "0": {"name": "LORA_STACK", "tooltip": "Combined stack of LoRAs from both inputs."}
+    }
+  },
+  "Save Image (LoraManager)": {
+    "display_name": "Зберегти зображення",
+    "inputs": {
+      "images": {"name": "Зображення", "tooltip": "The images to save."},
+      "filename_prefix": {"name": "Префікс імені файлу", "tooltip": "Prefix for the output filenames."}
+    },
+    "outputs": {}
+  },
+  "Debug Metadata (LoraManager)": {
+    "display_name": "Налагодження метаданих",
+    "inputs": {
+      "images": {"name": "Зображення", "tooltip": "Input images (required for execution flow)."},
+      "id": {"name": "ID", "tooltip": "Node's unique ID (hidden)."}
+    },
+    "outputs": {}
+  },
+  "WanVideo Lora Select (LoraManager)": {
+    "display_name": "Вибір LoRA WanVideo",
+    "inputs": {
+      "low_mem_load": {"name": "Низьке споживання пам'яті", "tooltip": "Load LORA models with less VRAM usage, slower loading. This affects ALL LoRAs, not just the current ones. No effect if merge_loras is False"},
+      "merge_loras": {"name": "Об'єднати LoRA", "tooltip": "Merge LoRAs into the model, otherwise they are loaded on the fly. Always disabled for GGUF and scaled fp8 models. This affects ALL LoRAs, not just the current one"},
+      "text": {"name": "Текст", "tooltip": "Format: <lora:lora_name:strength> separated by spaces or punctuation"},
+      "prev_lora": {"name": "Попередній LORA", "tooltip": "Optional previous lora stack to append to."}
+    },
+    "outputs": {
+      "0": {"name": "lora", "tooltip": "List of LoRA items for WanVideo format."},
+      "1": {"name": "trigger_words", "tooltip": "Collected trigger words from all LoRAs."},
+      "2": {"name": "active_loras", "tooltip": "List of active LoRAs with their strengths."}
+    }
+  },
+  "WanVideo Lora Select From Text (LoraManager)": {
+    "display_name": "Вибір LoRA WanVideo з тексту",
+    "inputs": {
+      "low_mem_load": {"name": "Низьке споживання пам'яті", "tooltip": "Load LORA models with less VRAM usage, slower loading. This affects ALL LoRAs, not just the current ones. No effect if merge_loras is False"},
+      "merge_lora": {"name": "Об'єднати LoRA", "tooltip": "Merge LoRAs into the model, otherwise they are loaded on the fly. Always disabled for GGUF and scaled fp8 models. This affects ALL LoRAs, not just the current one"},
+      "lora_syntax": {"name": "Синтаксис LoRA", "tooltip": "Connect a TEXT output for LoRA syntax: <lora:name:strength>"},
+      "prev_lora": {"name": "Попередній LORA", "tooltip": "Optional previous lora stack to append to."},
+      "blocks": {"name": "Блоки", "tooltip": "Optional blocks input for layer selection."}
+    },
+    "outputs": {
+      "0": {"name": "lora", "tooltip": "List of LoRA items for WanVideo format."},
+      "1": {"name": "trigger_words", "tooltip": "Collected trigger words from all LoRAs."},
+      "2": {"name": "active_loras", "tooltip": "List of active LoRAs with their strengths."}
+    }
+  },
+  "Lora Pool (LoraManager)": {
+    "display_name": "Пул LoRA",
+    "inputs": {
+      "pool_config": {"name": "Конфіг пулу", "tooltip": "Configuration for filtering LoRAs in the pool."},
+      "unique_id": {"name": "Унікальний ID", "tooltip": "Node's unique ID (hidden)."}
+    },
+    "outputs": {
+      "0": {"name": "POOL_CONFIG", "tooltip": "The filters dict from pool_config."}
+    }
+  },
+  "Lora Randomizer (LoraManager)": {
+    "display_name": "Рандомайзер LoRA",
+    "inputs": {
+      "randomizer_config": {"name": "Конфіг рандомайзера", "tooltip": "Settings for randomization (count, strength ranges, roll_mode)."},
+      "loras": {"name": "LoRAs", "tooltip": "List of LoRA dicts from LORAS widget (includes locked state)."},
+      "pool_config": {"name": "Конфіг пулу", "tooltip": "Optional config from LoRA Pool node for filtering."}
+    },
+    "outputs": {
+      "0": {"name": "LORA_STACK", "tooltip": "Randomly selected stack of LoRAs."}
+    }
+  },
+  "Lora Cycler (LoraManager)": {
+    "display_name": "Циклатор LoRA",
+    "inputs": {
+      "cycler_config": {"name": "Конфіг циклатора", "tooltip": "Settings for cycling (current_index, model_strength, clip_strength, sort_by)."},
+      "pool_config": {"name": "Конфіг пулу", "tooltip": "Optional config from LoRA Pool node for filtering."}
+    },
+    "outputs": {
+      "0": {"name": "LORA_STACK", "tooltip": "Stack containing the current LoRA in cycle."}
+    }
+  },
+  "Lora Info (LoraManager)": {
+    "display_name": "Інформація про LoRA",
+    "inputs": {},
+    "outputs": {}
+  },
+  "LoRA Syntax → Path (LoraManager)": {
+    "display_name": "Синтаксис LoRA → Шлях",
+    "inputs": {
+      "lora_syntax": {"name": "Синтаксис LoRA", "tooltip": "<lora:name:strength> formatted text from loaded_loras / active_loras output"}
+    },
+    "outputs": {
+      "0": {"name": "paths", "tooltip": "Absolute paths to the resolved LoRA files."}
+    }
+  },
+  "Create Hook LoRA (LoraManager)": {
+    "display_name": "Створити хук LoRA",
+    "inputs": {
+      "text": {"name": "Текст", "tooltip": "Search and select LoRAs. Each LoRA gets its own model/clip strength. Hooks chain with prev_hooks."},
+      "prev_hooks": {"name": "Попередні хуки", "tooltip": "Optional previous hooks to chain with."}
+    },
+    "outputs": {
+      "0": {"name": "HOOKS", "tooltip": "HookGroup containing all selected LoRAs as hooks."},
+      "1": {"name": "trigger_words", "tooltip": "Collected trigger words from all LoRAs."},
+      "2": {"name": "active_loras", "tooltip": "List of active LoRAs with their strengths."}
+    }
+  },
+  "Metadata Overwrite (LoraManager)": {
+    "display_name": "Перевизначення метаданих",
+    "inputs": {
+      "prompt": {"name": "Запит", "tooltip": "Positive prompt. Only overwrites when non-empty."},
+      "negative_prompt": {"name": "Негативний запит", "tooltip": "Negative prompt. Only overwrites when non-empty."},
+      "seed": {"name": "Сід", "tooltip": "Seed value. Only overwrites when > 0."},
+      "steps": {"name": "Кроки", "tooltip": "Number of steps. Only overwrites when > 0."},
+      "cfg_scale": {"name": "CFG масштаб", "tooltip": "CFG scale. Only overwrites when > 0."},
+      "sampler": {"name": "Семплер", "tooltip": "Sampler name. Only overwrites when non-empty."}
+    },
+    "outputs": {}
+   },
+   "ChatterBoxEngineNode": {
+     "display_name": "\u2699\ufe0f Двигун ChatterBox",
+     "inputs": {
+       "language": {"name": "Мова", "tooltip": "Модель мови ChatterBox для текст-у-мовлення. Локальні моделі бажаніші за віддалені завантаження."},
+       "device": {"name": "Пристрій", "tooltip": "Пристрій для запуску моделі ChatterBox: auto, cuda, xpu, cpu, mps"},
+       "exaggeration": {"name": "Експресивність", "tooltip": "Рівень експресивності мовлення ChatterBox. Вищі значення створюють більш драматичне та експресивне мовлення."},
+       "temperature": {"name": "Температура", "tooltip": "Контролює випадковість у генерації ChatterBox. Вищі значення = більш креативна/різноманітна мова, нижчі значення = більш послідовна мова."},
+       "cfg_weight": {"name": "CFG Weight", "tooltip": "Вага безкласної орієнтації (CFG) для ChatterBox. Контролює ступінь, до якої модель дотримується текстового запиту."},
+       "crash_protection_template": {"name": "Шаблон захисту від помилок", "tooltip": "Користувацький шаблон заповнення для коротких текстових фрагментів, щоб запобігти збоям ChatterBox."}
+     },
+     "outputs": {
+       "0": {"name": "TTS_engine"}
+     }
+   },
+   "F5TTSEngineNode": {
+     "display_name": "\u2699\ufe0f Двигун F5 TTS",
+     "inputs": {
+       "language": {"name": "Мова", "tooltip": "Варіант моделі F5-TTS для використання. F5TTS_Base - це стандартна модель, F5TTS_v1_Base - покращена версія."},
+       "device": {"name": "Пристрій", "tooltip": "Пристрій для запуску моделі F5-TTS: auto, cuda, xpu, cpu, mps"},
+       "temperature": {"name": "Температура", "tooltip": "Контролює випадковість у генерації F5-TTS. Вищі значення = більш креативна/різноманітна мова, нижчі значення = більш послідовне/передбачуване мовлення."},
+       "speed": {"name": "Швидкість", "tooltip": "Власна регулювання швидкості мовлення F5-TTS. 1.0 = нормальна швидкість, 0.5 = половина швидкості (повільніше), 2.0 = подвійна швидкість (швидше)."},
+       "target_rms": {"name": "Цільовий RMS", "tooltip": "Цільовий рівень гучності аудіо (середнє квадратичне значення). Контролює нормалізацію вихідної гучності."},
+       "cross_fade_duration": {"name": "Тривалість перехресного згладжування", "tooltip": "Тривалість в секундах для плавних аудіопереходів між сегментами F5-TTS. Запобігає помилкам аудіо, згладжуючи межі сегментів."},
+       "nfe_step": {"name": "Крок NFE", "tooltip": "Кроки оцінки нейронної функції для інференсу F5-TTS. Вищі значення = краща якість, але повільніша генерація. 32 - гарний баланс."},
+       "cfg_strength": {"name": "Сила CFG", "tooltip": "Контроль генерації мовлення. Нижчі значення (1.0-1.5) = більш природне, розмовне мовлення. Вищі значення (3.0-5.0) = чіткіше, більш артикульоване мовлення."}
+     },
+     "outputs": {
+       "0": {"name": "TTS_engine"}
+     }
+   },
+   "HiggsAudioEngineNode": {
+     "display_name": "\u2699\ufe0f Двигун Higgs Audio 2",
+     "inputs": {
+       "model": {"name": "Модель", "tooltip": "Вибір моделі Higgs Audio 2: higgs-audio-v2-3B (основна модель з параметрами 3B, найкраща якість та можливості клонування голосу)."},
+       "device": {"name": "Пристрій", "tooltip": "Вибір пристрою обчислень: auto, cuda, xpu, cpu, mps"},
+       "multi_speaker_mode": {"name": "Режим багатьох ораторів", "tooltip": "ВАЖЛИВО: Кожен режим вимагає різних форматів тексту! Нестандартне перемикання персонажів (ГЛАВНИЙ МЕТОД), Рідний багатоосібний (Розмова) або Рідний багатоосібний (Системний контекст)."},
+       "system_prompt": {"name": "Системний запит", "tooltip": "Системна інструкція, яка керує тим, як Higgs Audio 2 генерує мовлення. За замовчуванням: 'Генерувати аудіо відповідно до інструкції.'"},
+       "temperature": {"name": "Температура", "tooltip": "Контролює креативність та випадковість мовлення. Рекомендовано: 0.6-0.8 для природного мовлення з послідовністю."},
+       "top_p": {"name": "Top P", "tooltip": "Вибірка ядра - контролює різноманітність словникового запасу. Рекомендовано: 0.5-0.7 для зосередженого словникового запасу."},
+       "top_k": {"name": "Top K", "tooltip": "Обмежує вибір слів за частотою. Рекомендовано: 70-90 для ширшого словникового пулу."},
+       "max_new_tokens": {"name": "Максимум нових токенів", "tooltip": "Максимальний ліміт токенів - безпека на генерацію. Рекомендовано: 1000-2048 для більшості вмісту."},
+       "force_audio_gen": {"name": "Примусова генерація аудіо", "tooltip": "Примусово змушує модель генерувати аудіотокени замість текстових. Вмикайте лише тоді, коли модель генерує текст замість аудіо."},
+       "ras_win_len": {"name": "Довжина вікна RAS", "tooltip": "Розмір вікна уникання повторень (RAS). Рекомендовано: 7 для гарного балансу."},
+       "ras_max_num_repeat": {"name": "Максимум повторів RAS", "tooltip": "Максимальна кількість допустимих повторень у вікні RAS. Рекомендовано: 2 для мінімального повторення."}
+     },
+     "outputs": {
+       "0": {"name": "tts_engine"}
+     }
+   },
+   "StepAudioEditXEngineNode": {
+     "display_name": "\u2699\ufe0f Двигун Step Audio EditX",
+     "inputs": {
+       "model_path": {"name": "Шлях до моделі", "tooltip": "Вибір моделі Step Audio EditX. Використовуйте local:ModelName для локально встановлених моделей або ModelName для автоматичного завантаження."},
+       "device": {"name": "Пристрій", "tooltip": "Пристрій для запуску моделі Step Audio EditX: auto (CUDA), cpu"},
+       "torch_dtype": {"name": "Тип даних Torch", "tooltip": "Точність моделі: bfloat16 (рекомендовано, 8GB VRAM), float16 (6GB VRAM), float32 (16GB VRAM), auto"},
+       "quantization": {"name": "Квантування", "tooltip": "Зменшення VRAM за допомогою квантування: none (найкраща якість, 8GB VRAM), int8 (4GB VRAM), int4 (3GB VRAM)"},
+       "temperature": {"name": "Температура", "tooltip": "Температура вибірки для генерації. За замовчуванням: 0.7"},
+       "do_sample": {"name": "Виконати вибірку", "tooltip": "Увімкнути вибірку для генерації. True рекомендовано для різноманітного виводу."},
+       "max_new_tokens": {"name": "Максимум нових токенів", "tooltip": "Максимальна кількість аудіотокенів для генерації. 2048 ~10с, 4096 ~20с, 8192 ~40с."}
+     },
+     "outputs": {
+       "0": {"name": "TTS_engine"}
+     }
+   },
+   "VibeVoiceEngineNode": {
+     "display_name": "\u2699\ufe0f Двигун VibeVoice",
+     "inputs": {
+       "model": {"name": "Модель", "tooltip": "Вибір моделі VibeVoice: vibevoice-1.5B (офіційна модель Microsoft), vibevoice-7B (спільнота preview), kugelaudio-0-open, vibevoice-hindi варіанти"},
+       "device": {"name": "Пристрій", "tooltip": "Пристрій обчислень: auto, cuda, xpu, cpu, mps"},
+       "quantize_llm_4bit": {"name": "Квантувати LLM 4bit", "tooltip": "4-бітне квантування LLM. Значно зменшує використання VRAM, але може вплинути на якість."},
+       "attention_mode": {"name": "Режим уваги", "tooltip": "Реалізація уваги: auto (рекомендовано), eager, sdpa, flash_attention_2, sage"},
+       "multi_speaker_mode": {"name": "Режим багатьох ораторів", "tooltip": "Режим генерації оратора: Нестандартне перемикання персонажів або Рідний багатоосібний"},
+       "cfg_scale": {"name": "Шкала CFG", "tooltip": "Масштаб безкласного керування. Рекомендовано: 3.0 для оптимального балансу."},
+       "inference_steps": {"name": "Кроки інференсу", "tooltip": "Кроки дифузійної інференції. З CFG 3.0, лише 3 кроки часто дають кращі результати, ніж нижчий CFG + більше кроків."},
+       "use_sampling": {"name": "Використовувати вибірку", "tooltip": "Режим вибірки: False рекомендовано для детермінованої генерації, True для більш різноманітної вибірки з температурою/top_p."},
+       "temperature": {"name": "Температура", "tooltip": "Температура генерації (лише з вибіркою): 0.1-0.5 дуже консервативна, 0.8-1.0 природна варіація, 1.2+ креативна, але менш стабільна."},
+       "top_p": {"name": "Top P", "tooltip": "Вибірка ядра (лише з вибіркою): 0.5-0.7 зосереджений словниковий запас, 0.9-0.95 збалансований, 1.0 повний словниковий запас."},
+       "chunk_minutes": {"name": "Хвилини фрагмента", "tooltip": "Перевизначення фрагментації за часом: 0 вимкнено, 5-10 добре для ефективності пам'яті, 15-30 баланс між якістю та пам'яттю."},
+       "max_new_tokens": {"name": "Максимум нових токенів", "tooltip": "Максимальна кількість токенів генерації: 0 авто, 1000-2000 короткий вміст, 10000-20000 середній вміст, 30000-65536 довгий вміст."}
+     },
+     "outputs": {
+       "0": {"name": "TTS_engine"}
+     }
+   },
+   "Qwen3TTSEngineNode": {
+     "display_name": "\u2699\ufe0f Двигун Qwen3-TTS",
+     "inputs": {
+       "model_size": {"name": "Розмір моделі", "tooltip": "Розмір моделі: 1.7B (висока якість, підтримує всі функції), 0.6B (низька VRAM, без інструкційної підтримки)"},
+       "device": {"name": "Пристрій", "tooltip": "Пристрій для запуску моделі Qwen3-TTS: auto, cuda, cpu"},
+       "voice_preset": {"name": "Пресет голосу", "tooltip": "Вибір голосу: None (клонування голосу без зразка), або назви пресетів як Vivian, Serena, Uncle_Fu, Dylan тощо."},
+       "language": {"name": "Мова", "tooltip": "Цільова мова для генерації мовлення: Auto, Chinese, English, Japanese, Korean, German, French, Russian, Portuguese, Spanish, Italian"},
+       "instruct": {"name": "Інструкція", "tooltip": "Інструкція для контролю емоцій/стилю/акценту (лише CustomVoice з пресетами). Працює найкраще на англійських інструкціях."},
+       "top_k": {"name": "Top K", "tooltip": "Вибірка Top-K: Нижче (10-30) більше зосередження, За замовчуванням (50) збалансовано, Вище (80-100) більш різноманітний вивід."},
+       "top_p": {"name": "Top P", "tooltip": "Вибірка Top-P (ядро): Нижче (0.7-0.9) більше зосередження, За замовчуванням (1.0) розглядаються всі токени."},
+       "temperature": {"name": "Температура", "tooltip": "Температура вибірки: Нижча (0.5-0.7) більш передбачувана, За замовчуванням (0.9) збалансована, Вища (1.2+) більш креативна, але потенційно нестабільна."},
+       "repetition_penalty": {"name": "Штраф за повторення", "tooltip": "Штраф за повторення: 1.0 без штрафу, 1.05 малий штраф (за замовчуванням), 1.2+ сильний штраф (може вплинути на якість)."},
+       "max_new_tokens": {"name": "Максимум нових токенів", "tooltip": "Максимальна кількість токенів для генерації: 64-512 дуже коротке, 2048 стандартне, 4096-8192 довге."}
+     },
+     "outputs": {
+       "0": {"name": "TTS_engine"}
+     }
+   },
+   "MossTTSEngineNode": {
+     "display_name": "\u2699\ufe0f Двигун MOSS-TTS",
+     "inputs": {
+       "model_variant": {"name": "Варіант моделі", "tooltip": "Вибір моделі MOSS-TTS: Small 1.7B (Local), 8B (Delay), Native 8B Dialogue (MOSS-TTSD-v1.0)"},
+       "multi_speaker_mode": {"name": "Режим багатьох ораторів", "tooltip": "Нестандартне перемикання персонажів або Рідна багатоосібна діалогова мова"},
+       "device": {"name": "Пристрій", "tooltip": "Пристрій для MOSS-TTS: auto, cuda (рекомендовано), cpu (дуже повільно)"},
+       "language": {"name": "Мова", "tooltip": "Додатковий підказка мови для MOSS-TTS: Auto, Chinese, English, German, Spanish, French, Japanese, Italian, Hungarian, Korean, Russian, Persian, Arabic, Polish, Portuguese, Czech, Danish, Swedish, Greek, Turkish"},
+       "duration_tokens": {"name": "Токени тривалості", "tooltip": "Підказка цільової довжини виводу в аудіотокенах. Орієнтир: 12-13 = близько 1 секунди, 25 = близько 2 секунд, 50 = близько 4 секунд."},
+       "sampler_preset": {"name": "Пресет сэмплера", "tooltip": "Модель за замовчуванням використовує рекомендовані параметри вибірки OpenMOSS для вибраного варіанту. Користувацький дозволяє ручне керування."},
+       "temperature": {"name": "Температура", "tooltip": "Офіційна audio_temperature. Ігнорується, коли sampler_preset - Модель за замовчуванням."},
+       "top_p": {"name": "Top P", "tooltip": "Офіційний audio_top_p. Ігнорується, коли sampler_preset - Модель за замовчуванням."},
+       "top_k": {"name": "Top K", "tooltip": "Офіційний audio_top_k. Ігнорується, коли sampler_preset - Модель за замовчуванням."},
+       "repetition_penalty": {"name": "Штраф за повторення", "tooltip": "Офіційний audio_repetition_penalty. Ігнорується, коли sampler_preset - Модель за замовчуванням."},
+       "max_new_tokens": {"name": "Максимум нових токенів", "tooltip": "Максимальна кількість згенерованих токенів. Вищі значення дозволяють довші виводи та використовують більше VRAM/часу."}
+     },
+     "outputs": {
+       "0": {"name": "TTS_engine"}
+     }
+   },
+   "GraniteASREngineNode": {
+     "display_name": "\u2699\ufe0f Двигун Granite ASR",
+     "inputs": {
+       "model_name": {"name": "Назва моделі", "tooltip": "Модель мовлення Granite: granite-4.0-1b-speech (модель IBM 1B для транскрипції та перекладу мовлення)"},
+       "device": {"name": "Пристрій", "tooltip": "Пристрій для запуску Granite: auto, cuda, cpu"},
+       "max_new_tokens": {"name": "Максимум нових токенів", "tooltip": "Максимальна кількість текстових токенів, які Granite може згенерувати на один фрагмент ASR. 200 відповідає референтному прикладу IBM."}
+     },
+     "outputs": {
+       "0": {"name": "TTS_engine"}
+     }
+   },
+   "EchoTTSEngineNode": {
+     "display_name": "Двигун Echo-TTS",
+     "inputs": {
+       "preset": {"name": "Пресет", "tooltip": "Пресет сэмплера (перевизначає поля кроків/CFG/усічення/масштабування): Custom, Independent-High-Speaker-CFG, Independent-High-Speaker-CFG-Flat, Independent-High-CFG, Independent-High-CFG-Flat, Independent-Low-CFG, Independent-Low-CFG-Flat"},
+       "device": {"name": "Пристрій", "tooltip": "Пристрій для запуску Echo-TTS: auto (CUDA якщо доступно), cuda (примусовий NVIDIA GPU), cpu (тільки CPU)"},
+       "num_steps": {"name": "Кількість кроків", "tooltip": "Кількість кроків вибірки. Вища може покращити якість, але збільшує час і VRAM."},
+       "cfg_scale_text": {"name": "Шкала CFG тексту", "tooltip": "Масштаб керування текстом. Вищий штовхає ближче до підказки; занадто високий може звучати різко."},
+       "cfg_scale_speaker": {"name": "Шкала CFG оратора", "tooltip": "Масштаб керування оратором. Вищий штовхає ближче до референсного голосу; занадто високий може погіршити якість."},
+       "cfg_min_t": {"name": "CFG Min T", "tooltip": "Нижня межа CFG (0-1). Керування активне, коли t >= cfg_min_t."},
+       "cfg_max_t": {"name": "CFG Max T", "tooltip": "Верхня межа CFG (0-1). Керування активне, коли t <= cfg_max_t."},
+       "truncation_factor": {"name": "Фактор усічення", "tooltip": "Фактор усічення початкового шуму. Нижчий може зменшити різноманітність; вищий може збільшити варіацію."},
+       "rescale_k": {"name": "Масштаб K", "tooltip": "К масштабування часової оцінки (див. рескейлінг Echo-TTS). Використовується лише якщо вказані обидва: rescale_k та rescale_sigma."},
+       "rescale_sigma": {"name": "Сигма масштабування", "tooltip": "Сигма масштабування часової оцінки (див. рескейлінг Echo-TTS). Використовується лише якщо вказані обидва: rescale_k та rescale_sigma."},
+       "force_speaker_kv": {"name": "Примусова KV оратора", "tooltip": "Увімкнути масштабування KV оратора для сильнішого відповідання референсному голосу. Автоматично вимикається для коротких текстових фрагментів (< 20 символів), щоб запобігти шумовим хвилікам."},
+       "speaker_kv_scale": {"name": "Масштаб KV оратора", "tooltip": "Масштаб KV (>1 = сильніший вплив оратора). Використовується лише коли увімкнено Примусовий оратор."},
+       "speaker_kv_max_layers": {"name": "Макс. шарів KV оратора", "tooltip": "Максимальна кількість шарів для застосування масштабування KV (0-24). Використовується лише коли увімкнено Примусовий оратор."},
+       "speaker_kv_min_t": {"name": "KV Min T оратора", "tooltip": "KV Min t (0-1). Масштабування активне, поки t не опуститься нижче цього значення."},
+       "sequence_length": {"name": "Довжина послідовності", "tooltip": "Довжина латентної вибірки. 640 - ~30с (максимум, побачений під час навчання). Найкращі результати при <=30с."}
+     },
+     "outputs": {
+       "0": {"name": "TTS_engine"}
+     }
+   },
+   "ChatterBoxOfficial23LangEngineNode": {
+     "display_name": "\u2699\ufe0f Двигун ChatterBox Офіційний 23-мовний",
+     "inputs": {
+       "model_version": {"name": "Версія моделі", "tooltip": "Версія моделі ChatterBox: v1 (оригінальна 23-мовна), v2 (покращена зі спеціальними токенами для емоцій/звуків/стилів мовлення, покращена підтримка російської мови), Vietnamese (Viterbox) (спільнота файнтюн для в'єтнамської мови), Egyptian Arabic (oddadmix) (спільнота файнтюн для єгипетської арабської)"},
+       "language": {"name": "Мова", "tooltip": "Модель мови ChatterBox для текст-у-мовлення. Локальні моделі бажаніші за віддалені завантаження."},
+       "device": {"name": "Пристрій", "tooltip": "Пристрій для запуску моделі ChatterBox: auto, cuda, xpu, cpu, mps"},
+       "exaggeration": {"name": "Експресивність", "tooltip": "Контроль експресивності емоцій. УВАГА: Цей параметр має мінімальний ефект у багатомовних моделях (v1 та v2) через проблеми навчання моделі."},
+       "temperature": {"name": "Температура", "tooltip": "Контролює випадковість у генерації ChatterBox. Вищі значення = більш креативна/різноманітна мова, нижчі значення = більш послідовна мова."},
+       "cfg_weight": {"name": "CFG Weight", "tooltip": "Вага безкласної орієнтації (CFG) для ChatterBox. Контролює ступінь, до якої модель дотримується текстового запиту."},
+       "repetition_penalty": {"name": "Штраф за повторення", "tooltip": "Штраф за повторювані токени. Вищі значення зменшують повторення у згенерованому мовленні."},
+       "min_p": {"name": "Min P", "tooltip": "Мінімальний поріг ймовірності для вибору токена. Нижчі значення дозволяють більш різноманітні токени."},
+       "top_p": {"name": "Top P", "tooltip": "Порогова вибірка ядра. Контролює масу ймовірності токенів для розгляду."}
+     },
+     "outputs": {
+       "0": {"name": "TTS_engine"}
+     }
+   },
+   "IndexTTSEngineNode": {
+     "display_name": "\u2699\ufe0f Двигун IndexTTS-2",
+     "inputs": {
+       "model_path": {"name": "Шлях до моделі", "tooltip": "Вибір моделі IndexTTS-2: local:ModelName для локально встановлених моделей, ModelName для автоматичного завантаження"},
+       "device": {"name": "Пристрій", "tooltip": "Пристрій для запуску моделі IndexTTS-2: auto, cuda, xpu, cpu, mps"},
+       "emotion_alpha": {"name": "Альфа емоції", "tooltip": "Контроль інтенсивності емоції (0.0-2.0). Впливає на керування емоціями з підключених вузлів емоцій. 1.0=повна емоція, 0.5=50% змішування, 0.0=нейтрально."},
+       "use_random": {"name": "Використовувати випадкове", "tooltip": "Увімкнути випадкову вибірку для більш різноманітної генерації. Може покращити різноманітність."},
+       "max_text_tokens_per_segment": {"name": "Макс. текстових токенів на сегмент", "tooltip": "Максимальна кількість текстових токенів на сегмент. Довші сегменти можуть призвести до погіршення якості. За замовчуванням: 120"},
+       "interval_silence": {"name": "Інтервал мовчання", "tooltip": "Тривалість мовчання між сегментами в мілісекундах. За замовчуванням: 200 мс"},
+       "temperature": {"name": "Температура", "tooltip": "Контролює випадковість. Вищі значення = більш креативна, нижчі = більш послідовна."},
+       "top_p": {"name": "Top P", "tooltip": "Порогова вибірка ядра. Контролює масу ймовірності токенів для розгляду. За замовчуванням: 0.8"},
+       "top_k": {"name": "Top K", "tooltip": "Параметр вибірки Top-k. Нижчі значення = більше зосередження генерації. За замовчуванням: 30"},
+       "do_sample": {"name": "Виконати вибірку", "tooltip": "Увімкнути вибірку для генерації. Вимкніть для детермінованого виводу."},
+       "length_penalty": {"name": "Штраф за довжину", "tooltip": "Штраф за довжину для пошукового променя. Позитивні значення сприяють довшим послідовностям. За замовчуванням: 0.0"},
+       "num_beams": {"name": "Кількість променів", "tooltip": "Кількість променів для пошукового променя. Вищі значення = краща якість, але повільніше. За замовчуванням: 3"},
+       "repetition_penalty": {"name": "Штраф за повторення", "tooltip": "Штраф за повторювані токени. Вищі значення зменшують повторення. За замовчуванням: 10.0"},
+       "max_mel_tokens": {"name": "Макс. мел-токенів", "tooltip": "Максимальна кількість токенів мел-спектрограми для генерації. Контролює обмеження довжини виводу. За замовчуванням: 1500"},
+       "use_fp16": {"name": "Використовувати FP16", "tooltip": "Використовувати FP16 для швидшої інференції. Вимкніть, якщо зустрінете числові проблеми."},
+       "use_deepspeed": {"name": "Використовувати DeepSpeed", "tooltip": "Використовувати оптимізацію DeepSpeed. Вимагає встановлення DeepSpeed."}
+     },
+     "outputs": {
+       "0": {"name": "TTS_engine"}
+     }
+   },
+   "CosyVoiceEngineNode": {
+     "display_name": "\u2699\ufe0f Двигун CosyVoice3",
+     "inputs": {
+       "model_path": {"name": "Шлях до моделі", "tooltip": "Варіант моделі CosyVoice3: Fun-CosyVoice3-0.5B-RL (навчена з підкріпленням, рекомендовано), Fun-CosyVoice3-0.5B (базова модель)"},
+       "device": {"name": "Пристрій", "tooltip": "Пристрій для запуску моделі CosyVoice3: auto (CUDA > CPU), cuda (NVIDIA GPU), cpu (тільки CPU)"},
+       "speed": {"name": "Швидкість", "tooltip": "Множник швидкості мовлення (0.5=повільно, 1.0=нормально, 2.0=швидко). ВАЖЛИВО: Це післяобробне розтягування часу, НЕ природна зміна прозодії/ритму."},
+       "use_fp16": {"name": "Використовувати FP16", "tooltip": "Використовувати FP16 для швидшої інференції. Вимкніть, якщо зустрінете числові проблеми."}
+     },
+     "outputs": {
+       "0": {"name": "TTS_engine"}
+     }
+   },
+   "RVCEngineNode": {
+     "display_name": "\u2699\ufe0f Двигун RVC",
+     "inputs": {},
+     "outputs": {
+       "0": {"name": "TTS_engine"}
+     }
+   },
+   "IndexTTSEmotionOptionsNode": {
+     "display_name": "\ud83c\udfa7 Вектори емоцій IndexTTS-2",
+     "inputs": {
+       "Happy": {"name": "Щасливий", "tooltip": "Інтенсивність щасливої емоції (0.0-1.2). Вищі значення роблять мовлення більш радісним і жвавим."},
+       "Angry": {"name": "Сердитий", "tooltip": "Інтенсивність сердитої емоції (0.0-1.2). Вищі значення роблять мовлення більш агресивним і різким."},
+       "Sad": {"name": "Сумний", "tooltip": "Інтенсивність сумної емоції (0.0-1.2). Вищі значення роблять мовлення більш меланхолійним і пригніченим."},
+       "Surprised": {"name": "Здивований", "tooltip": "Інтенсивність здивованої емоції (0.0-1.2). Вищі значення роблять мовлення більш подивованим і захопленим."},
+       "Afraid": {"name": "Якийся", "tooltip": "Інтенсивність якісної емоції (0.0-1.2). Вищі значення роблять мовлення більш наляканим і тривожним."},
+       "Disgusted": {"name": "Відразливий", "tooltip": "Інтенсивність відразливої емоції (0.0-1.2). Вищі значення роблять мовлення більш відштовхуючим і закиданим."},
+       "Calm": {"name": "Спокійний", "tooltip": "Інтенсивність спокійної емоції (0.0-1.2). Вищі значення роблять мовлення більш мирним і розслабленим."},
+       "Melancholic": {"name": "Меланхолійний", "tooltip": "Інтенсивність меланхолійної емоції (0.0-1.2). Вищі значення роблять мовлення більш думливо сумним і марнуватим."}
+     },
+     "outputs": {
+       "0": {"name": "emotion_control"}
+     }
+   },
+   "UnifiedTTSTextNode": {
+     "display_name": "\ud83c\udfa4 Текст TTS",
+     "inputs": {
+       "TTS_engine": {"name": "Двигун TTS", "tooltip": "Конфігурація двигуна TTS від ChatterBox Engine або F5 TTS Engine"},
+       "text": {"name": "Текст", "tooltip": "Текст для перетворення на мовлення. Використовуйте теги [Character] для перемикання голосу. Персонажі, які не знайдені у текстиках голосів, використовуватимуть голос розповідача."},
+       "narrator_voice": {"name": "Голос розповідача", "tooltip": "Резервний голос розповідача з папок голосів. Використовується, коли opt_narrator не підключено. Виберіть 'none' для двигунів, які підтримують прямий TTS без клонування голосу, наприклад MOSS."},
+       "seed": {"name": "Сід", "tooltip": "Сід для відтворюваної генерації TTS. Одинаковий сід з однаковими входами дасть ідентичні результати. Встановіть на 0 для випадкової генерації."}
+     },
+     "outputs": {
+       "0": {"name": "audio"},
+       "1": {"name": "generation_info"}
+     }
+   },
+   "UnifiedTTSSRTNode": {
+     "display_name": "\ud83d\udcbc TTS SRT",
+     "inputs": {
+       "TTS_engine": {"name": "Двигун TTS", "tooltip": "Конфігурація двигуна TTS від ChatterBox Engine або F5 TTS Engine"},
+       "srt_content": {"name": "Вміст SRT", "tooltip": "Вміст субтитрів SRT. Кожен запис визначає текстовий фрагмент і його точний час початку та закінчення. Підтримує перемикання персонажів з тегами [Character]."},
+       "narrator_voice": {"name": "Голос розповідача", "tooltip": "Резервний голос розповідача з папок голосів. Використовується, коли opt_narrator не підключено. Виберіть 'none' для двигунів, які підтримують прямий TTS без клонування голосу, наприклад MOSS."},
+       "seed": {"name": "Сід", "tooltip": "Сід для відтворюваної генерації TTS. Одинаковий сід з однаковими входами дасть ідентичні результати. Встановіть на 0 для випадкової генерації."},
+       "timing_mode": {"name": "Режим таймінгу", "tooltip": "Визначає, як аудіосегменти вирівнюються з таймінгами SRT: stretch_to_fit (розтягнути), pad_with_silence (заповнити мовчанням), smart_natural (розумний природний, рекомендовано), concatenate (конкатенувати)"}
+     },
+     "outputs": {
+       "0": {"name": "audio"},
+       "1": {"name": "generation_info"},
+       "2": {"name": "timing_report"},
+       "3": {"name": "Adjusted_SRT"}
+     }
+   },
+   "UnifiedVoiceChangerNode": {
+     "display_name": "\ud83d\udd04 Зміна голосу",
+     "inputs": {},
+     "outputs": {
+       "0": {"name": "audio"},
+       "1": {"name": "generation_info"}
+     }
+   },
+   "UnifiedASRTranscribeNode": {
+     "display_name": "\u270f\ufe0f Транскрипція ASR",
+     "inputs": {},
+     "outputs": {
+       "0": {"name": "transcription"},
+       "1": {"name": "audio"},
+       "2": {"name": "info"}
+     }
+   },
+   "CharacterVoicesNode": {
+     "display_name": "\ud83c\udd9f Голоси персонажів",
+     "inputs": {
+       "voice_name": {"name": "Назва голосу", "tooltip": "Виберіть голос персонажа з папок models/voices/ або voices_examples/. ВАЖЛИВО: Вузол Голоси персонажів вимагає .txt файл з такою ж назвою, як і аудіофайл, щоб розпізнати його як персонажа."},
+       "reference_text": {"name": "Текст зразка", "tooltip": "Створіть текст зразка на льоту для підключеного аудіовходу. F5-TTS ВИМОГАє текст зразка, Higgs Audio 2 Необов'язково, але використовує текст зразка, якщо надано, ChatterBox/VibeVoice/IndexTTS не використовують текст зразка."}
+     },
+     "outputs": {
+       "0": {"name": "opt_narrator"},
+       "1": {"name": "character_name"}
+     }
+   },
+   "RefreshVoiceCacheNode": {
+     "display_name": "\u267b\ufe0f Оновити кеш голосів",
+     "inputs": {},
+     "outputs": {
+       "0": {"name": "refreshed_voices"},
+       "1": {"name": "voice_count"},
+       "2": {"name": "character_mapping"}
+     }
+   },
+   "ChatterBoxVoiceCapture": {
+     "display_name": "\ud83c\udfa4 Захоплення голосу ChatterBox",
+     "inputs": {},
+     "outputs": {
+       "0": {"name": "voice_audio"}
+     }
+   },
+   "AudioAnalyzerNode": {
+     "display_name": "\ud83d\udd0a Аналізатор аудіохвиль",
+     "inputs": {},
+     "outputs": {
+       "0": {"name": "waveform"},
+       "1": {"name": "spectrum"},
+       "2": {"name": "spectrogram"},
+       "3": {"name": "analysis_info"}
+     }
+   },
+   "AudioAnalyzerOptionsNode": {
+     "display_name": "\u2699\ufe0f Параметри аналізатора аудіо",
+     "inputs": {},
+     "outputs": {
+       "0": {"name": "options"}
+     }
+   },
+   "VocalRemovalNode": {
+     "display_name": "\ud83d\udead Видалення голосу чи шуму",
+     "inputs": {},
+     "outputs": {
+       "0": {"name": "audio"},
+       "1": {"name": "removed_vocals"}
+     }
+   },
+   "MergeAudioNode": {
+     "display_name": "\ud83c\udfff Злиття аудіо",
+     "inputs": {},
+     "outputs": {
+       "0": {"name": "merged_audio"}
+     }
+   },
+   "VoiceFixerNode": {
+     "display_name": "\ud83d\udead Виправлення голосу",
+     "inputs": {},
+     "outputs": {
+       "0": {"name": "fixed_audio"}
+     }
+   },
+   "RVCPitchOptionsNode": {
+     "display_name": "\u2699\ufe0f Параметри видобутку висоти тону RVC",
+     "inputs": {},
+     "outputs": {
+       "0": {"name": "pitch_options"}
+     }
+   }
+ }

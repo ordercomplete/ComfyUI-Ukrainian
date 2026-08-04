@@ -1075,6 +1075,13 @@ class PromptServer():
         self.app.add_routes(api_routes)
         self.app.add_routes(self.routes)
 
+        # Ensure our comfyui-manager-locale extension is registered for static serving
+        # BEFORE the loop below so the /extensions/comfyui-manager-locale/ route is created.
+        if "comfyui-manager-locale" not in nodes.EXTENSION_WEB_DIRS:
+            import os
+            locale_dir = r"D:\ComfyUI-Ukrainian\custom_nodes\comfyui-manager-locale\web"
+            nodes.EXTENSION_WEB_DIRS["comfyui-manager-locale"] = locale_dir
+
         # Add routes from web extensions.
         for name, dir in nodes.EXTENSION_WEB_DIRS.items():
             self.app.add_routes([web.static('/extensions/' + name, dir)])

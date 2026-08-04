@@ -37,12 +37,16 @@ def apply_html_patch():
     with open(index_html, "r", encoding="utf-8") as f:
         content = f.read()
     
-    if "/comfyui-manager-locale/uk.js" in content:
-        print("[Manager Locale UA] ✅ Патч вже застосований")
+# Define script tags that will be injected into index.html
+    script_tag = '<script src="/extensions/comfyui-manager-locale/manager-locale-uk.js"></script>'
+    language_switch_tag = '<script src="/extensions/comfyui-manager-locale/language-switcher.js"></script>'
+    
+    # If the patch has already been applied, exit early
+    if "/extensions/comfyui-manager-locale/manager-locale-uk.js" in content:
+        print("[Manager Locale UA] ✅ Патч вже застосований") 
         return
     
-    script_tag = '<script src="/comfyui-manager-locale/uk.js"></script>'
-    patched = content.replace("</head>", script_tag + "\n</head>")
+    patched = content.replace("</head>", script_tag + "\n" + language_switch_tag + "\n</head>")
     
     if patched == content:
         print("[Manager Locale UA] ⚠️ </head> не знайдено в index.html")
@@ -69,12 +73,17 @@ def inject_locale_script():
         from fastapi.responses import PlainTextResponse
         from server import PromptServer
         
-        @PromptServer.instance.routes.get("/comfyui-manager-locale/uk.js")
-        async def get_locale_script():
-            return PlainTextResponse(SCRIPT_CONTENT, media_type="application/javascript")
-        
+        @PromptServer.instance.routes.get("/comfyui-manager-locale/{lang}")
+        async def get_locale(lang: str):
+            path = os.path.join(os.path.dirname(__file__), "web", f"manager-locale-{lang}.js")
+            if not os.path.exists(path):
+                raise Exception(f"Locale file {lang}.js not found")
+            with open(path, "r", encoding="utf-8") as f:
+                return PlainTextResponse(f.read(), media_type="application/javascript")
+            
         print("[Manager Locale UA] ✅ API /comfyui-manager-locale/uk.js підключено")
     except Exception as e:
         print(f"[Manager Locale UA] ❌ Помилка API: {e}")
 
-inject_locale_script()
+
+
