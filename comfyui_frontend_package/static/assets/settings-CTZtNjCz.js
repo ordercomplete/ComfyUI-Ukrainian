@@ -754,9 +754,72 @@ var settings_default = {
 	"loramanager.tag_space_replacement": LoraManager_replace_underscores,
 	"loramanager.usage_statistics": LoraManager_usage_statistics,
 	"loramanager.new_tab_template": LoraManager_new_tab_template,
-	"loramanager.strength_step": LoraManager_strength_step
+  "loramanager.strength_step": LoraManager_strength_step,
+  // TTS Audio Suite — Ukrainian translations (2026-08-03)
+  "TTSAudioSuite.InlineEditTags.Precision": TTSAudioSuite_InlineEditTags_Precision,
+  "TTSAudioSuite.InlineEditTags.Device": TTSAudioSuite_InlineEditTags_Device,
+  "TTSAudioSuite.RestoreTags.VCEngine": TTSAudioSuite_RestoreTags_VCEngine,
+  "TTSAudioSuite.RestoreTags.CosyVoiceVariant": TTSAudioSuite_RestoreTags_CosyVoiceVariant,
+  // Underscore-normalized keys for LoRA Manager (2026-08-03)
+  "loramanager_trigger_word_wheel_sensitivity": LoraManager_trigger_word_wheel_sensitivity,
+  "loramanager_auto_path_correction": LoraManager_auto_path_correction,
+  "loramanager_prompt_tag_autocomplete": LoraManager_tag_autocomplete,
+  "loramanager_autocomplete_append_comma": LoraManager_append_comma,
+  "loramanager_autocomplete_auto_format": LoraManager_auto_format_on_blur,
+  "loramanager_autocomplete_accept_key": LoraManager_accept_key,
+  "loramanager_tag_space_replacement": LoraManager_replace_underscores,
+  "loramanager_usage_statistics": LoraManager_usage_statistics,
+  "loramanager_new_tab_template": LoraManager_new_tab_template,
+  "loramanager_strength_step": LoraManager_strength_step,
+  // Underscore-normalized keys for TTS Audio Suite (2026-08-03)
+  "TTSAudioSuite_InlineEditTags_Precision": TTSAudioSuite_InlineEditTags_Precision,
+  "TTSAudioSuite_InlineEditTags_Device": TTSAudioSuite_InlineEditTags_Device,
+  "TTSAudioSuite_RestoreTags_VCEngine": TTSAudioSuite_RestoreTags_VCEngine,
+  "TTSAudioSuite_RestoreTags_CosyVoiceVariant": TTSAudioSuite_RestoreTags_CosyVoiceVariant
 };
 //#endregion
-export { Comfy_Appearance_DisableAnimations, Comfy_Canvas_BackgroundImage, Comfy_Canvas_LeftMouseClickBehavior, Comfy_Canvas_MouseWheelScroll, Comfy_Canvas_NavigationMode, Comfy_Canvas_SelectionToolbox, Comfy_ConfirmClear, Comfy_DOMClippingEnabled, Comfy_DevMode, Comfy_DisableFloatRounding, Comfy_DisableSliders, Comfy_EditAttention_Delta, Comfy_EnableTooltips, Comfy_EnableWorkflowViewRestore, Comfy_Execution_PreviewMethod, Comfy_FloatRoundingPrecision, Comfy_Graph_AutoPanSpeed, Comfy_Graph_CanvasInfo, Comfy_Graph_CanvasMenu, Comfy_Graph_CtrlShiftZoom, Comfy_Graph_DeduplicateSubgraphNodeIds, Comfy_Graph_LinkMarkers, Comfy_Graph_LiveSelection, Comfy_Graph_ZoomSpeed, Comfy_GroupSelectedNodes_Padding, Comfy_Group_DoubleClickTitleToEdit, Comfy_LinkRelease_Action, Comfy_LinkRelease_ActionShift, Comfy_LinkRenderMode, Comfy_Load3D_3DViewerEnable, Comfy_Load3D_BackgroundColor, Comfy_Load3D_CameraType, Comfy_Load3D_LightAdjustmentIncrement, Comfy_Load3D_LightIntensity, Comfy_Load3D_LightIntensityMaximum, Comfy_Load3D_LightIntensityMinimum, Comfy_Load3D_PLYEngine, Comfy_Load3D_ShowGrid, Comfy_Locale, Comfy_MaskEditor_BrushAdjustmentSpeed, Comfy_MaskEditor_UseDominantAxis, Comfy_ModelLibrary_AutoLoadAll, Comfy_ModelLibrary_NameFormat, Comfy_NodeBadge_NodeIdBadgeMode, Comfy_NodeBadge_NodeLifeCycleBadgeMode, Comfy_NodeBadge_NodeSourceBadgeMode, Comfy_NodeBadge_ShowApiPricing, Comfy_NodeLibrary_NewDesign, Comfy_NodeReplacement_Enabled, Comfy_NodeSearchBoxImpl, Comfy_NodeSearchBoxImpl_FollowCursor, Comfy_NodeSearchBoxImpl_NodePreview, Comfy_NodeSearchBoxImpl_ShowCategory, Comfy_NodeSearchBoxImpl_ShowIdName, Comfy_NodeSearchBoxImpl_ShowNodeFrequency, Comfy_NodeSuggestions_number, Comfy_Node_AllowImageSizeDraw, Comfy_Node_AlwaysShowAdvancedWidgets, Comfy_Node_AutoSnapLinkToSlot, Comfy_Node_BypassAllLinksOnDelete, Comfy_Node_DoubleClickTitleToEdit, Comfy_Node_MiddleClickRerouteNode, Comfy_Node_Opacity, Comfy_Node_ShowDeprecated, Comfy_Node_ShowExperimental, Comfy_Node_SnapHighlightsNode, Comfy_Notification_ShowVersionUpdates, Comfy_Pointer_ClickBufferTime, Comfy_Pointer_ClickDrift, Comfy_Pointer_DoubleClickTime, Comfy_PreviewFormat, Comfy_PromptFilename, Comfy_QueueButton_BatchCountLimit, Comfy_Queue_MaxHistoryItems, Comfy_Queue_QPOV2, Comfy_RightSidePanel_ShowErrorsTab, Comfy_Sidebar_Location, Comfy_Sidebar_Size, Comfy_Sidebar_Style, Comfy_Sidebar_UnifiedWidth, Comfy_SnapToGrid_GridSize, Comfy_TextareaWidget_FontSize, Comfy_TextareaWidget_Spellcheck, Comfy_TreeExplorer_ItemPadding, Comfy_UI_TabBarLayout, Comfy_UseNewMenu, Comfy_Validation_Workflows, Comfy_VueNodes_Enabled, Comfy_WidgetControlMode, Comfy_Window_UnloadConfirmation, Comfy_Workflow_AutoSave, Comfy_Workflow_AutoSaveDelay, Comfy_Workflow_ConfirmDelete, Comfy_Workflow_Persist, Comfy_Workflow_ShowMissingModelsWarning, Comfy_Workflow_SortNodeIdOnSave, Comfy_Workflow_WarnBlueprintOverwrite, Comfy_Workflow_WorkflowTabsPosition, LiteGraph_Canvas_MaximumFps, LiteGraph_Canvas_MinFontSizeForLOD, LiteGraph_ContextMenu_Scaling, LiteGraph_Group_SelectChildrenOnClick, LiteGraph_Node_DefaultPadding, LiteGraph_Node_TooltipDelay, LiteGraph_Reroute_SplineOffset, settings_default as default, LoraManager_trigger_word_wheel_sensitivity, LoraManager_auto_path_correction, LoraManager_tag_autocomplete, LoraManager_append_comma, LoraManager_auto_format_on_blur, LoraManager_accept_key, LoraManager_replace_underscores, LoraManager_usage_statistics, LoraManager_new_tab_template, LoraManager_strength_step, pysssss_SnapToGrid };
+
+// TTS Audio Suite settings — Ukrainian translations (2026-08-03)
+var TTSAudioSuite_InlineEditTags_Precision = {
+	"name": "Точність моделі для вбудованих тегів редагування",
+	"tooltip": "Torch dtype для моделі Step Audio EditX при використанні вбудованих тегів редагування (<Laughter>, <style:whisper> тощо).\nВикористовуйте int8 або int4 для систем з малою кількістю VRAM.\nПримітка: Це стосується ТІЛЬКО вбудованих тегів редагування. Коли використовуєте ноду Step Audio EditX напряму, використовуйте параметр точності ноди.",
+	"options": {
+		"auto": "авто",
+		"fp32": "fp32",
+		"fp16": "fp16",
+		"bf16": "bf16",
+		"int8": "int8",
+		"int4": "int4"
+	}
+};
+var TTSAudioSuite_InlineEditTags_Device = {
+	"name": "Пристрій для вбудованих тегів редагування",
+	"tooltip": "Пристрій для моделі Step Audio EditX при використанні вбудованих тегів редагування (<Laughter>, <style:whisper> тощо).\nAuto обирає найкращий доступний пристрій (cuda > xpu > cpu).\nПримітка: Це стосується ТІЛЬКО вбудованих тегів редагування. Коли використовуєте ноду Step Audio EditX напряму, використовуйте параметр точності ноди.",
+	"options": {
+		"auto": "авто",
+		"cuda": "cuda",
+		"cpu": "cpu",
+		"xpu": "xpu"
+	}
+};
+var TTSAudioSuite_RestoreTags_VCEngine = {
+	"name": "Двигун конвертації голосу для тегів <restore>",
+	"tooltip": "Двигун конвертації голосу, що використовується для тегів <restore> в постобробці.\nChatterBox 23-мови (типовий): Найкраща якість, підтримує 23 мови\nChatterBox: Оригінальний двигун, англійська/німецька/норвезька\nCosyVoice: Нова опція з нативною CosyVoice3 VC (вихід 24кГц)",
+	"options": {
+		"chatterbox_23lang": "ChatterBox 23-мови",
+		"chatterbox": "ChatterBox",
+		"cosyvoice": "CosyVoice"
+	}
+};
+var TTSAudioSuite_RestoreTags_CosyVoiceVariant = {
+	"name": "Варіант моделі CosyVoice для тегів <restore>",
+	"tooltip": "Варіант моделі CosyVoice для відновлення голосу (застосовується тільки коли двигун VC — CosyVoice).\nRL: Fun-CosyVoice3-0.5B-RL (варіант з підсиленням навчанням, типовий)\nstandard: Fun-CosyVoice3-0.5B (стандартний варіант)",
+	"options": {
+		"RL": "RL",
+		"standard": "стандартний"
+	}
+};
+
+export { Comfy_Appearance_DisableAnimations, Comfy_Canvas_BackgroundImage, Comfy_Canvas_LeftMouseClickBehavior, Comfy_Canvas_MouseWheelScroll, Comfy_Canvas_NavigationMode, Comfy_Canvas_SelectionToolbox, Comfy_ConfirmClear, Comfy_DOMClippingEnabled, Comfy_DevMode, Comfy_DisableFloatRounding, Comfy_DisableSliders, Comfy_EditAttention_Delta, Comfy_EnableTooltips, Comfy_EnableWorkflowViewRestore, Comfy_Execution_PreviewMethod, Comfy_FloatRoundingPrecision, Comfy_Graph_AutoPanSpeed, Comfy_Graph_CanvasInfo, Comfy_Graph_CanvasMenu, Comfy_Graph_CtrlShiftZoom, Comfy_Graph_DeduplicateSubgraphNodeIds, Comfy_Graph_LinkMarkers, Comfy_Graph_LiveSelection, Comfy_Graph_ZoomSpeed, Comfy_GroupSelectedNodes_Padding, Comfy_Group_DoubleClickTitleToEdit, Comfy_LinkRelease_Action, Comfy_LinkRelease_ActionShift, Comfy_LinkRenderMode, Comfy_Load3D_3DViewerEnable, Comfy_Load3D_BackgroundColor, Comfy_Load3D_CameraType, Comfy_Load3D_LightAdjustmentIncrement, Comfy_Load3D_LightIntensity, Comfy_Load3D_LightIntensityMaximum, Comfy_Load3D_LightIntensityMinimum, Comfy_Load3D_PLYEngine, Comfy_Load3D_ShowGrid, Comfy_Locale, Comfy_MaskEditor_BrushAdjustmentSpeed, Comfy_MaskEditor_UseDominantAxis, Comfy_ModelLibrary_AutoLoadAll, Comfy_ModelLibrary_NameFormat, Comfy_NodeBadge_NodeIdBadgeMode, Comfy_NodeBadge_NodeLifeCycleBadgeMode, Comfy_NodeBadge_NodeSourceBadgeMode, Comfy_NodeBadge_ShowApiPricing, Comfy_NodeLibrary_NewDesign, Comfy_NodeReplacement_Enabled, Comfy_NodeSearchBoxImpl, Comfy_NodeSearchBoxImpl_FollowCursor, Comfy_NodeSearchBoxImpl_NodePreview, Comfy_NodeSearchBoxImpl_ShowCategory, Comfy_NodeSearchBoxImpl_ShowIdName, Comfy_NodeSearchBoxImpl_ShowNodeFrequency, Comfy_NodeSuggestions_number, Comfy_Node_AllowImageSizeDraw, Comfy_Node_AlwaysShowAdvancedWidgets, Comfy_Node_AutoSnapLinkToSlot, Comfy_Node_BypassAllLinksOnDelete, Comfy_Node_DoubleClickTitleToEdit, Comfy_Node_MiddleClickRerouteNode, Comfy_Node_Opacity, Comfy_Node_ShowDeprecated, Comfy_Node_ShowExperimental, Comfy_Node_SnapHighlightsNode, Comfy_Notification_ShowVersionUpdates, Comfy_Pointer_ClickBufferTime, Comfy_Pointer_ClickDrift, Comfy_Pointer_DoubleClickTime, Comfy_PreviewFormat, Comfy_PromptFilename, Comfy_QueueButton_BatchCountLimit, Comfy_Queue_MaxHistoryItems, Comfy_Queue_QPOV2, Comfy_RightSidePanel_ShowErrorsTab, Comfy_Sidebar_Location, Comfy_Sidebar_Size, Comfy_Sidebar_Style, Comfy_Sidebar_UnifiedWidth, Comfy_SnapToGrid_GridSize, Comfy_TextareaWidget_FontSize, Comfy_TextareaWidget_Spellcheck, Comfy_TreeExplorer_ItemPadding, Comfy_UI_TabBarLayout, Comfy_UseNewMenu, Comfy_Validation_Workflows, Comfy_VueNodes_Enabled, Comfy_WidgetControlMode, Comfy_Window_UnloadConfirmation, Comfy_Workflow_AutoSave, Comfy_Workflow_AutoSaveDelay, Comfy_Workflow_ConfirmDelete, Comfy_Workflow_Persist, Comfy_Workflow_ShowMissingModelsWarning, Comfy_Workflow_SortNodeIdOnSave, Comfy_Workflow_WarnBlueprintOverwrite, Comfy_Workflow_WorkflowTabsPosition, LiteGraph_Canvas_MaximumFps, LiteGraph_Canvas_MinFontSizeForLOD, LiteGraph_ContextMenu_Scaling, LiteGraph_Group_SelectChildrenOnClick, LiteGraph_Node_DefaultPadding, LiteGraph_Node_TooltipDelay, LiteGraph_Reroute_SplineOffset, settings_default as default, LoraManager_trigger_word_wheel_sensitivity, LoraManager_auto_path_correction, LoraManager_tag_autocomplete, LoraManager_append_comma, LoraManager_auto_format_on_blur, LoraManager_accept_key, LoraManager_replace_underscores, LoraManager_usage_statistics, LoraManager_new_tab_template, LoraManager_strength_step, TTSAudioSuite_InlineEditTags_Precision, TTSAudioSuite_InlineEditTags_Device, TTSAudioSuite_RestoreTags_VCEngine, TTSAudioSuite_RestoreTags_CosyVoiceVariant, pysssss_SnapToGrid };
 
 //# sourceMappingURL=settings-CTZtNjCz.js.map
