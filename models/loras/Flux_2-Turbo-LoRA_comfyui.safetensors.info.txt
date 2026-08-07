@@ -1,0 +1,36 @@
+============================================================
+Файл: Flux_2-Turbo-LoRA_comfyui.safetensors
+Шлях: D:\ComfyUI-Ukrainian\models\loras\Flux_2-Turbo-LoRA_comfyui.safetensors
+Формат: safetensors
+Розмір: 2632.9 МБ
+Кількість тензорів: 340
+============================================================
+
+ТИП:          LoRA
+Підтип:       Standard LoRA
+Впевненість:  high
+
+Нотатки:
+  • Великий розмір для LoRA — можливо full fine-tune
+
+Рекомендована папка ComfyUI: models/loras/
+
+Приклади ключів тензорів:
+  diffusion_model.double_stream_modulation_img.lin.lora_A.weight
+  diffusion_model.double_stream_modulation_img.lin.lora_B.weight
+  diffusion_model.double_stream_modulation_txt.lin.lora_A.weight
+  diffusion_model.double_stream_modulation_txt.lin.lora_B.weight
+  diffusion_model.final_layer.linear.lora_A.weight
+  diffusion_model.final_layer.linear.lora_B.weight
+  diffusion_model.guidance_in.in_layer.lora_A.weight
+  diffusion_model.guidance_in.in_layer.lora_B.weight
+  diffusion_model.guidance_in.out_layer.lora_A.weight
+  diffusion_model.guidance_in.out_layer.lora_B.weight
+  diffusion_model.img_in.lora_A.weight
+  diffusion_model.img_in.lora_B.weight
+  diffusion_model.single_blocks.0.linear1.lora_A.weight
+  diffusion_model.single_blocks.0.linear1.lora_B.weight
+  diffusion_model.single_blocks.0.linear2.lora_A.weight
+  ... і ще 325
+
+Згенеровано safetensors_inspector.py

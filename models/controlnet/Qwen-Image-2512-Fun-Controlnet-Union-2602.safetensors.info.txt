@@ -1,0 +1,31 @@
+============================================================
+Файл: Qwen-Image-2512-Fun-Controlnet-Union-2602.safetensors
+Шлях: D:\ComfyUI-Ukrainian\models\controlnet\Qwen-Image-2512-Fun-Controlnet-Union-2602.safetensors
+Формат: safetensors
+Розмір: 3349.7 МБ
+Кількість тензорів: 174
+============================================================
+
+ТИП:          Unknown
+Впевненість:  low
+
+
+Приклади ключів тензорів:
+  control_blocks.0.after_proj.bias
+  control_blocks.0.after_proj.weight
+  control_blocks.0.attn.add_k_proj.bias
+  control_blocks.0.attn.add_k_proj.weight
+  control_blocks.0.attn.add_q_proj.bias
+  control_blocks.0.attn.add_q_proj.weight
+  control_blocks.0.attn.add_v_proj.bias
+  control_blocks.0.attn.add_v_proj.weight
+  control_blocks.0.attn.norm_added_k.weight
+  control_blocks.0.attn.norm_added_q.weight
+  control_blocks.0.attn.norm_k.weight
+  control_blocks.0.attn.norm_q.weight
+  control_blocks.0.attn.to_add_out.bias
+  control_blocks.0.attn.to_add_out.weight
+  control_blocks.0.attn.to_k.bias
+  ... і ще 159
+
+Згенеровано safetensors_inspector.py

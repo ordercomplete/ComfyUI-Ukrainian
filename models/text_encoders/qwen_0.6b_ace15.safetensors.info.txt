@@ -1,0 +1,31 @@
+============================================================
+Файл: qwen_0.6b_ace15.safetensors
+Шлях: D:\ComfyUI-Ukrainian\models\text_encoders\qwen_0.6b_ace15.safetensors
+Формат: safetensors
+Розмір: 1136.4 МБ
+Кількість тензорів: 310
+============================================================
+
+ТИП:          Unknown
+Впевненість:  low
+
+
+Приклади ключів тензорів:
+  model.embed_tokens.weight
+  model.layers.0.input_layernorm.weight
+  model.layers.0.mlp.down_proj.weight
+  model.layers.0.mlp.gate_proj.weight
+  model.layers.0.mlp.up_proj.weight
+  model.layers.0.post_attention_layernorm.weight
+  model.layers.0.self_attn.k_norm.weight
+  model.layers.0.self_attn.k_proj.weight
+  model.layers.0.self_attn.o_proj.weight
+  model.layers.0.self_attn.q_norm.weight
+  model.layers.0.self_attn.q_proj.weight
+  model.layers.0.self_attn.v_proj.weight
+  model.layers.1.input_layernorm.weight
+  model.layers.1.mlp.down_proj.weight
+  model.layers.1.mlp.gate_proj.weight
+  ... і ще 295
+
+Згенеровано safetensors_inspector.py

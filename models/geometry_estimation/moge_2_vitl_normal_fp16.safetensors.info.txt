@@ -1,0 +1,32 @@
+============================================================
+Файл: moge_2_vitl_normal_fp16.safetensors
+Шлях: D:\ComfyUI-Ukrainian\models\geometry_estimation\moge_2_vitl_normal_fp16.safetensors
+Формат: safetensors
+Розмір: 631.2 МБ
+Кількість тензорів: 521
+============================================================
+
+ТИП:          VAE
+Впевненість:  high
+
+Рекомендована папка ComfyUI: models/vae/
+
+Приклади ключів тензорів:
+  encoder.backbone.blocks.0.attn.proj.bias
+  encoder.backbone.blocks.0.attn.proj.weight
+  encoder.backbone.blocks.0.attn.qkv.bias
+  encoder.backbone.blocks.0.attn.qkv.weight
+  encoder.backbone.blocks.0.ls1.gamma
+  encoder.backbone.blocks.0.ls2.gamma
+  encoder.backbone.blocks.0.mlp.fc1.bias
+  encoder.backbone.blocks.0.mlp.fc1.weight
+  encoder.backbone.blocks.0.mlp.fc2.bias
+  encoder.backbone.blocks.0.mlp.fc2.weight
+  encoder.backbone.blocks.0.norm1.bias
+  encoder.backbone.blocks.0.norm1.weight
+  encoder.backbone.blocks.0.norm2.bias
+  encoder.backbone.blocks.0.norm2.weight
+  encoder.backbone.blocks.1.attn.proj.bias
+  ... і ще 506
+
+Згенеровано safetensors_inspector.py

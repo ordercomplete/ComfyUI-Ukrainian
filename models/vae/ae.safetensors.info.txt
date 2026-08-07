@@ -1,0 +1,42 @@
+============================================================
+Файл: ae.safetensors
+Шлях: D:\ComfyUI-Ukrainian\models\vae\ae.safetensors
+Формат: safetensors
+Розмір: 319.8 МБ
+Кількість тензорів: 244
+============================================================
+
+ТИП:          VAE
+Впевненість:  high
+Base model:   flux.1-ae
+
+Рекомендована папка ComfyUI: models/vae/
+
+Корисні метадані:
+  modelspec.architecture: Flux.1-AE
+  modelspec.title: Flux.1 Autoencoder
+  modelspec.date: 2024-08-01
+  modelspec.sai_model_spec: 1.0.1
+
+Усі ключі метаданих (9):
+  modelspec.architecture, modelspec.author, modelspec.date, modelspec.description, modelspec.hash_sha256, modelspec.implementation, modelspec.license, modelspec.sai_model_spec, modelspec.title
+
+Приклади ключів тензорів:
+  decoder.conv_in.bias
+  decoder.conv_in.weight
+  decoder.conv_out.bias
+  decoder.conv_out.weight
+  decoder.mid.attn_1.k.bias
+  decoder.mid.attn_1.k.weight
+  decoder.mid.attn_1.norm.bias
+  decoder.mid.attn_1.norm.weight
+  decoder.mid.attn_1.proj_out.bias
+  decoder.mid.attn_1.proj_out.weight
+  decoder.mid.attn_1.q.bias
+  decoder.mid.attn_1.q.weight
+  decoder.mid.attn_1.v.bias
+  decoder.mid.attn_1.v.weight
+  decoder.mid.block_1.conv1.bias
+  ... і ще 229
+
+Згенеровано safetensors_inspector.py

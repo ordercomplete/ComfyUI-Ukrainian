@@ -1,0 +1,31 @@
+============================================================
+Файл: taef1_encoder.safetensors
+Шлях: D:\ComfyUI-Ukrainian\models\vae_approx\taef1_encoder.safetensors
+Формат: safetensors
+Розмір: 2.4 МБ
+Кількість тензорів: 67
+============================================================
+
+ТИП:          Unknown
+Впевненість:  low
+
+
+Приклади ключів тензорів:
+  0.bias
+  0.weight
+  1.conv.0.bias
+  1.conv.0.weight
+  1.conv.2.bias
+  1.conv.2.weight
+  1.conv.4.bias
+  1.conv.4.weight
+  10.weight
+  11.conv.0.bias
+  11.conv.0.weight
+  11.conv.2.bias
+  11.conv.2.weight
+  11.conv.4.bias
+  11.conv.4.weight
+  ... і ще 52
+
+Згенеровано safetensors_inspector.py

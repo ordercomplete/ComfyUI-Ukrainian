@@ -1,0 +1,31 @@
+============================================================
+Файл: taesd3_decoder.safetensors
+Шлях: D:\ComfyUI-Ukrainian\models\vae_approx\taesd3_decoder.safetensors
+Формат: safetensors
+Розмір: 2.4 МБ
+Кількість тензорів: 67
+============================================================
+
+ТИП:          Unknown
+Впевненість:  low
+
+
+Приклади ключів тензорів:
+  1.bias
+  1.weight
+  10.conv.0.bias
+  10.conv.0.weight
+  10.conv.2.bias
+  10.conv.2.weight
+  10.conv.4.bias
+  10.conv.4.weight
+  12.weight
+  13.conv.0.bias
+  13.conv.0.weight
+  13.conv.2.bias
+  13.conv.2.weight
+  13.conv.4.bias
+  13.conv.4.weight
+  ... і ще 52
+
+Згенеровано safetensors_inspector.py

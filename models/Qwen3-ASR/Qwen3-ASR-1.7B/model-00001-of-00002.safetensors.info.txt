@@ -1,0 +1,38 @@
+============================================================
+Файл: model-00001-of-00002.safetensors
+Шлях: D:\ComfyUI-Ukrainian\models\Qwen3-ASR\Qwen3-ASR-1.7B\model-00001-of-00002.safetensors
+Формат: safetensors
+Розмір: 4024.8 МБ
+Кількість тензорів: 654
+============================================================
+
+ТИП:          Checkpoint (ймовірно)
+Впевненість:  low
+
+Нотатки:
+  • Великий файл з багатьма тензорами
+
+Рекомендована папка ComfyUI: models/checkpoints/
+
+Усі ключі метаданих (1):
+  format
+
+Приклади ключів тензорів:
+  thinker.audio_tower.conv2d1.bias
+  thinker.audio_tower.conv2d1.weight
+  thinker.audio_tower.conv2d2.bias
+  thinker.audio_tower.conv2d2.weight
+  thinker.audio_tower.conv2d3.bias
+  thinker.audio_tower.conv2d3.weight
+  thinker.audio_tower.conv_out.weight
+  thinker.audio_tower.layers.0.fc1.bias
+  thinker.audio_tower.layers.0.fc1.weight
+  thinker.audio_tower.layers.0.fc2.bias
+  thinker.audio_tower.layers.0.fc2.weight
+  thinker.audio_tower.layers.0.final_layer_norm.bias
+  thinker.audio_tower.layers.0.final_layer_norm.weight
+  thinker.audio_tower.layers.0.self_attn.k_proj.bias
+  thinker.audio_tower.layers.0.self_attn.k_proj.weight
+  ... і ще 639
+
+Згенеровано safetensors_inspector.py

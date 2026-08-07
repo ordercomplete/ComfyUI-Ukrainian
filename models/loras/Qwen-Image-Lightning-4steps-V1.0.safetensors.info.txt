@@ -1,0 +1,36 @@
+============================================================
+Файл: Qwen-Image-Lightning-4steps-V1.0.safetensors
+Шлях: D:\ComfyUI-Ukrainian\models\loras\Qwen-Image-Lightning-4steps-V1.0.safetensors
+Формат: safetensors
+Розмір: 1620.2 МБ
+Кількість тензорів: 2160
+============================================================
+
+ТИП:          LoRA
+Підтип:       Standard LoRA
+Впевненість:  high
+
+Нотатки:
+  • Великий розмір для LoRA — можливо full fine-tune
+
+Рекомендована папка ComfyUI: models/loras/
+
+Приклади ключів тензорів:
+  transformer_blocks.0.attn.add_k_proj.alpha
+  transformer_blocks.0.attn.add_q_proj.alpha
+  transformer_blocks.0.attn.add_v_proj.alpha
+  transformer_blocks.0.attn.to_add_out.alpha
+  transformer_blocks.0.attn.to_k.alpha
+  transformer_blocks.0.attn.to_out.0.alpha
+  transformer_blocks.0.attn.to_q.alpha
+  transformer_blocks.0.attn.to_v.alpha
+  transformer_blocks.0.img_mlp.net.0.proj.alpha
+  transformer_blocks.0.img_mlp.net.2.alpha
+  transformer_blocks.0.txt_mlp.net.0.proj.alpha
+  transformer_blocks.0.txt_mlp.net.2.alpha
+  transformer_blocks.1.attn.add_k_proj.alpha
+  transformer_blocks.1.attn.add_q_proj.alpha
+  transformer_blocks.1.attn.add_v_proj.alpha
+  ... і ще 2145
+
+Згенеровано safetensors_inspector.py

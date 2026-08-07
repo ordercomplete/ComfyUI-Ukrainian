@@ -1,0 +1,38 @@
+============================================================
+Файл: flux2_dev_fp8mixed.safetensors
+Шлях: D:\ComfyUI-Ukrainian\models\diffusion_models\flux2_dev_fp8mixed.safetensors
+Формат: safetensors
+Розмір: 33813.1 МБ
+Кількість тензорів: 555
+============================================================
+
+ТИП:          Diffusion Model / UNet (тільки ядро)
+Впевненість:  high
+
+Нотатки:
+  • Ймовірно для models/diffusion_models/ (Flux, SD3, DiT)
+
+Рекомендована папка ComfyUI: models/diffusion_models/
+
+Усі ключі метаданих (1):
+  _quantization_metadata
+
+Приклади ключів тензорів:
+  double_blocks.0.img_mlp.0.input_scale
+  double_blocks.0.img_mlp.0.weight_scale
+  double_blocks.0.img_mlp.2.input_scale
+  double_blocks.0.img_mlp.2.weight_scale
+  double_blocks.0.txt_mlp.0.input_scale
+  double_blocks.0.txt_mlp.0.weight_scale
+  double_blocks.0.txt_mlp.2.input_scale
+  double_blocks.0.txt_mlp.2.weight_scale
+  double_blocks.1.img_mlp.0.input_scale
+  double_blocks.1.img_mlp.0.weight_scale
+  double_blocks.1.img_mlp.2.input_scale
+  double_blocks.1.img_mlp.2.weight_scale
+  double_blocks.1.txt_mlp.0.input_scale
+  double_blocks.1.txt_mlp.0.weight_scale
+  double_blocks.1.txt_mlp.2.input_scale
+  ... і ще 540
+
+Згенеровано safetensors_inspector.py

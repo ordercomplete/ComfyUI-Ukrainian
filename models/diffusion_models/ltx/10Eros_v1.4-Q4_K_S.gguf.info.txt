@@ -1,0 +1,28 @@
+============================================================
+Файл: 10Eros_v1.4-Q4_K_S.gguf
+Шлях: D:\ComfyUI-Ukrainian\models\diffusion_models\ltx\10Eros_v1.4-Q4_K_S.gguf
+Формат: gguf
+Розмір: 12589.6 МБ
+Кількість тензорів: 4444
+============================================================
+
+ТИП:          GGUF Model
+Впевненість:  medium
+Base model:   ltxv
+
+Нотатки:
+  • GGUF version: 3
+  • Кількість тензорів: 4444
+  • KV pairs: 27
+  • Загальний GGUF — потрібен відповідний loader (ComfyUI-GGUF тощо)
+
+
+Корисні метадані:
+  general.architecture: ltxv
+  general.quantization_version: 2
+  general.file_type: 14
+
+Усі ключі метаданих (3):
+  general.architecture, general.quantization_version, general.file_type
+
+Згенеровано safetensors_inspector.py

@@ -1,0 +1,38 @@
+============================================================
+Файл: ltx-2.3-22b-distilled-fp8.safetensors
+Шлях: D:\ComfyUI-Ukrainian\models\checkpoints\ltx-2.3-22b-distilled-fp8.safetensors
+Формат: safetensors
+Розмір: 28163.8 МБ
+Кількість тензорів: 8871
+============================================================
+
+ТИП:          Diffusion Model / UNet (тільки ядро)
+Впевненість:  high
+
+Нотатки:
+  • Ймовірно для models/diffusion_models/ (Flux, SD3, DiT)
+
+Рекомендована папка ComfyUI: models/diffusion_models/
+
+Усі ключі метаданих (5):
+  _quantization_metadata, config, encrypted_wandb_properties, license, model_version
+
+Приклади ключів тензорів:
+  model.diffusion_model.audio_scale_shift_table
+  model.diffusion_model.scale_shift_table
+  model.diffusion_model.transformer_blocks.0.audio_prompt_scale_shift_table
+  model.diffusion_model.transformer_blocks.0.audio_scale_shift_table
+  model.diffusion_model.transformer_blocks.0.prompt_scale_shift_table
+  model.diffusion_model.transformer_blocks.0.scale_shift_table
+  model.diffusion_model.transformer_blocks.0.scale_shift_table_a2v_ca_audio
+  model.diffusion_model.transformer_blocks.0.scale_shift_table_a2v_ca_video
+  model.diffusion_model.transformer_blocks.1.audio_prompt_scale_shift_table
+  model.diffusion_model.transformer_blocks.1.audio_scale_shift_table
+  model.diffusion_model.transformer_blocks.1.prompt_scale_shift_table
+  model.diffusion_model.transformer_blocks.1.scale_shift_table
+  model.diffusion_model.transformer_blocks.1.scale_shift_table_a2v_ca_audio
+  model.diffusion_model.transformer_blocks.1.scale_shift_table_a2v_ca_video
+  model.diffusion_model.transformer_blocks.10.attn1.to_gate_logits.input_scale
+  ... і ще 8856
+
+Згенеровано safetensors_inspector.py

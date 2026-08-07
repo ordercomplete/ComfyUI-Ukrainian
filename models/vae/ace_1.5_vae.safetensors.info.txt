@@ -1,0 +1,32 @@
+============================================================
+Файл: ace_1.5_vae.safetensors
+Шлях: D:\ComfyUI-Ukrainian\models\vae\ace_1.5_vae.safetensors
+Формат: safetensors
+Розмір: 321.8 МБ
+Кількість тензорів: 365
+============================================================
+
+ТИП:          VAE
+Впевненість:  high
+
+Рекомендована папка ComfyUI: models/vae/
+
+Приклади ключів тензорів:
+  decoder.layers.0.bias
+  decoder.layers.0.weight_g
+  decoder.layers.0.weight_v
+  decoder.layers.1.layers.0.alpha
+  decoder.layers.1.layers.0.beta
+  decoder.layers.1.layers.1.bias
+  decoder.layers.1.layers.1.weight_g
+  decoder.layers.1.layers.1.weight_v
+  decoder.layers.1.layers.2.layers.0.alpha
+  decoder.layers.1.layers.2.layers.0.beta
+  decoder.layers.1.layers.2.layers.1.bias
+  decoder.layers.1.layers.2.layers.1.weight_g
+  decoder.layers.1.layers.2.layers.1.weight_v
+  decoder.layers.1.layers.2.layers.2.alpha
+  decoder.layers.1.layers.2.layers.2.beta
+  ... і ще 350
+
+Згенеровано safetensors_inspector.py

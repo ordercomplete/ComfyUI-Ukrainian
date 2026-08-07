@@ -1,6 +1,4 @@
-# ComfyUI Models - ВСІ типи моделей
-models/
-**/models/
+# ComfyUI Models - файли моделей (структура папок зберігається)
 *.safetensors
 *.pth
 *.pt
@@ -65,13 +63,70 @@ python_embeded_*/
 **/python_embeded/
 
 # ComfyUI runtime folders
-models/
 output/
 user/
 temp/
 *.log
 
-# Large binary files (models)
+# ===== Агентські папки та файли =====
+.clinerules/
+.opencode/
+memories/
+.github/agents/
+.github/skills/
+.github/hooks/
+.github/knowledge-base/
+.github/docs/
+.github/scripts/
+.github/.prompt.md
+.github/STRUCTURE.md
+docs/agent-structure.md
+
+# ===== Плани розробки перекладу =====
+PLAN_and_INSTRUCTION/
+CHANGELOG_UKRAINIAN_TRANSLATION.md
+
+# ===== Скрипти перекладу (scripts/) =====
+scripts/add_missing_translations.py
+scripts/analyze_empty.py
+scripts/apply_batch.py
+scripts/apply_translations.py
+scripts/check_package.py
+scripts/compare_keys.py
+scripts/count_progress.py
+scripts/find_missing_category.py
+scripts/sync_translations.py
+scripts/translate_main.py
+scripts/translate_node_defs.py
+scripts/transl
+scripts/translations/
+scripts/validate_json.py
+
+# ===== Кореневі скрипти перекладу/перевірки =====
+check_node.py
+check_output.py
+check_progress.py
+check_progress2.py
+debug_parse.py
+extract_node_defs.py
+fix_update_comfyui_patch.txt
+hook_breaker_ac10a0.py
+inspect_models.bat
+safetensors_inspector.py
+verify.py
+cuda_malloc.py
+manager_server.py.backup
+
+# ===== Особисті скрипти запуску/оновлення =====
+Run_ComfyUI/
+update_ComfyUI/
+run_comfyui_new_ui.bat
+
+# ===== Архіви =====
+.github.rar
+.opencode.rar
+
+# ===== Large binary files (models) =====
 *.safetensors
 *.pth
 *.pt

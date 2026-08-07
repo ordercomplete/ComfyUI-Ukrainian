@@ -1,0 +1,35 @@
+============================================================
+Файл: flux2-vae.safetensors
+Шлях: D:\ComfyUI-Ukrainian\models\vae\flux2-vae.safetensors
+Формат: safetensors
+Розмір: 320.6 МБ
+Кількість тензорів: 251
+============================================================
+
+ТИП:          VAE
+Впевненість:  high
+
+Рекомендована папка ComfyUI: models/vae/
+
+Усі ключі метаданих (1):
+  format
+
+Приклади ключів тензорів:
+  bn.num_batches_tracked
+  bn.running_mean
+  bn.running_var
+  decoder.conv_in.bias
+  decoder.conv_in.weight
+  decoder.conv_norm_out.bias
+  decoder.conv_norm_out.weight
+  decoder.conv_out.bias
+  decoder.conv_out.weight
+  decoder.mid_block.attentions.0.group_norm.bias
+  decoder.mid_block.attentions.0.group_norm.weight
+  decoder.mid_block.attentions.0.to_k.bias
+  decoder.mid_block.attentions.0.to_k.weight
+  decoder.mid_block.attentions.0.to_out.0.bias
+  decoder.mid_block.attentions.0.to_out.0.weight
+  ... і ще 236
+
+Згенеровано safetensors_inspector.py

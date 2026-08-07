@@ -1,0 +1,31 @@
+============================================================
+Файл: wav2vec2_large_english_fp16.safetensors
+Шлях: D:\ComfyUI-Ukrainian\models\audio_encoders\wav2vec2_large_english_fp16.safetensors
+Формат: safetensors
+Розмір: 601.8 МБ
+Кількість тензорів: 424
+============================================================
+
+ТИП:          Unknown
+Впевненість:  low
+
+
+Приклади ключів тензорів:
+  lm_head.bias
+  lm_head.weight
+  wav2vec2.encoder.layer_norm.bias
+  wav2vec2.encoder.layer_norm.weight
+  wav2vec2.encoder.layers.0.attention.k_proj.bias
+  wav2vec2.encoder.layers.0.attention.k_proj.weight
+  wav2vec2.encoder.layers.0.attention.out_proj.bias
+  wav2vec2.encoder.layers.0.attention.out_proj.weight
+  wav2vec2.encoder.layers.0.attention.q_proj.bias
+  wav2vec2.encoder.layers.0.attention.q_proj.weight
+  wav2vec2.encoder.layers.0.attention.v_proj.bias
+  wav2vec2.encoder.layers.0.attention.v_proj.weight
+  wav2vec2.encoder.layers.0.feed_forward.intermediate_dense.bias
+  wav2vec2.encoder.layers.0.feed_forward.intermediate_dense.weight
+  wav2vec2.encoder.layers.0.feed_forward.output_dense.bias
+  ... і ще 409
+
+Згенеровано safetensors_inspector.py

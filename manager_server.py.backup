@@ -1,7 +1,0 @@
-# Резервна копія оригінального файлу manager_server.py
-# Цей файл створено для можливості відновлення оригіналу
-# 
-# Оригінальний файл: D:\GEN\ComfyUI\python_embeded\Lib\site-packages\comfyui_manager\legacy\manager_server.py
-#
-# Щоб відновити оригінал, виконайте:
-# copy "D:\GEN\ComfyUI\ComfyUI\manager_server.py.backup" "D:\GEN\ComfyUI\python_embeded\Lib\site-packages\comfyui_manager\legacy\manager_server.py"

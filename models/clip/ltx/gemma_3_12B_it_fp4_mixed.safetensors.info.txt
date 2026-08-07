@@ -1,0 +1,35 @@
+============================================================
+Файл: gemma_3_12B_it_fp4_mixed.safetensors
+Шлях: D:\ComfyUI-Ukrainian\models\clip\ltx\gemma_3_12B_it_fp4_mixed.safetensors
+Формат: safetensors
+Розмір: 9010.0 МБ
+Кількість тензорів: 2040
+============================================================
+
+ТИП:          Checkpoint (ймовірно)
+Впевненість:  low
+
+Нотатки:
+  • Великий файл з багатьма тензорами
+
+Рекомендована папка ComfyUI: models/checkpoints/
+
+Приклади ключів тензорів:
+  model.layers.0.mlp.down_proj.weight_scale_2
+  model.layers.0.mlp.gate_proj.weight_scale_2
+  model.layers.0.mlp.up_proj.weight_scale_2
+  model.layers.0.self_attn.k_proj.weight_scale_2
+  model.layers.0.self_attn.o_proj.weight_scale_2
+  model.layers.0.self_attn.q_proj.weight_scale_2
+  model.layers.0.self_attn.v_proj.weight_scale_2
+  model.layers.1.mlp.down_proj.weight_scale_2
+  model.layers.1.mlp.gate_proj.weight_scale_2
+  model.layers.1.mlp.up_proj.weight_scale_2
+  model.layers.1.self_attn.k_proj.weight_scale_2
+  model.layers.1.self_attn.o_proj.weight_scale_2
+  model.layers.1.self_attn.q_proj.weight_scale_2
+  model.layers.1.self_attn.v_proj.weight_scale_2
+  model.layers.10.mlp.down_proj.weight_scale_2
+  ... і ще 2025
+
+Згенеровано safetensors_inspector.py

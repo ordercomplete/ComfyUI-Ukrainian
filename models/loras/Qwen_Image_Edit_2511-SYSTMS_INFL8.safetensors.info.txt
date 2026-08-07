@@ -1,0 +1,45 @@
+============================================================
+Файл: Qwen_Image_Edit_2511-SYSTMS_INFL8.safetensors
+Шлях: D:\ComfyUI-Ukrainian\models\loras\Qwen_Image_Edit_2511-SYSTMS_INFL8.safetensors
+Формат: safetensors
+Розмір: 281.5 МБ
+Кількість тензорів: 1680
+============================================================
+
+ТИП:          LoRA
+Підтип:       Standard LoRA
+Впевненість:  high
+Base model:   qwen_image
+
+Нотатки:
+  • Знайдено 2 ключів ss_* (Kohya)
+
+Рекомендована папка ComfyUI: models/loras/
+
+Корисні метадані:
+  ss_base_model_version: qwen_image
+  ss_output_name: QWEN_IMAGE_EDIT_INFL8_02
+  sshs_model_hash: c54b0d274e00b405dd77f0a5d7ed07010957b3d91921bc8aa49ab3ab5eefd67b
+
+Усі ключі метаданих (9):
+  format, name, software, ss_base_model_version, ss_output_name, sshs_legacy_hash, sshs_model_hash, training_info, version
+
+Приклади ключів тензорів:
+  diffusion_model.transformer_blocks.0.attn.add_k_proj.lora_A.weight
+  diffusion_model.transformer_blocks.0.attn.add_k_proj.lora_B.weight
+  diffusion_model.transformer_blocks.0.attn.add_q_proj.lora_A.weight
+  diffusion_model.transformer_blocks.0.attn.add_q_proj.lora_B.weight
+  diffusion_model.transformer_blocks.0.attn.add_v_proj.lora_A.weight
+  diffusion_model.transformer_blocks.0.attn.add_v_proj.lora_B.weight
+  diffusion_model.transformer_blocks.0.attn.to_add_out.lora_A.weight
+  diffusion_model.transformer_blocks.0.attn.to_add_out.lora_B.weight
+  diffusion_model.transformer_blocks.0.attn.to_k.lora_A.weight
+  diffusion_model.transformer_blocks.0.attn.to_k.lora_B.weight
+  diffusion_model.transformer_blocks.0.attn.to_out.0.lora_A.weight
+  diffusion_model.transformer_blocks.0.attn.to_out.0.lora_B.weight
+  diffusion_model.transformer_blocks.0.attn.to_q.lora_A.weight
+  diffusion_model.transformer_blocks.0.attn.to_q.lora_B.weight
+  diffusion_model.transformer_blocks.0.attn.to_v.lora_A.weight
+  ... і ще 1665
+
+Згенеровано safetensors_inspector.py

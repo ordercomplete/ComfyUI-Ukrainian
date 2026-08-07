@@ -1,0 +1,35 @@
+============================================================
+Файл: hunyuan_3d_v2.1.safetensors
+Шлях: D:\ComfyUI-Ukrainian\models\checkpoints\hunyuan_3d_v2.1.safetensors
+Формат: safetensors
+Розмір: 7024.7 МБ
+Кількість тензорів: 1601
+============================================================
+
+ТИП:          Diffusion Model / UNet (тільки ядро)
+Впевненість:  high
+
+Нотатки:
+  • Ймовірно для models/diffusion_models/ (Flux, SD3, DiT)
+
+Рекомендована папка ComfyUI: models/diffusion_models/
+
+Приклади ключів тензорів:
+  conditioner.main_image_encoder.model.embeddings.cls_token
+  conditioner.main_image_encoder.model.embeddings.mask_token
+  conditioner.main_image_encoder.model.embeddings.patch_embeddings.projection.bias
+  conditioner.main_image_encoder.model.embeddings.patch_embeddings.projection.weight
+  conditioner.main_image_encoder.model.embeddings.position_embeddings
+  conditioner.main_image_encoder.model.encoder.layer.0.attention.attention.key.bias
+  conditioner.main_image_encoder.model.encoder.layer.0.attention.attention.key.weight
+  conditioner.main_image_encoder.model.encoder.layer.0.attention.attention.query.bias
+  conditioner.main_image_encoder.model.encoder.layer.0.attention.attention.query.weight
+  conditioner.main_image_encoder.model.encoder.layer.0.attention.attention.value.bias
+  conditioner.main_image_encoder.model.encoder.layer.0.attention.attention.value.weight
+  conditioner.main_image_encoder.model.encoder.layer.0.attention.output.dense.bias
+  conditioner.main_image_encoder.model.encoder.layer.0.attention.output.dense.weight
+  conditioner.main_image_encoder.model.encoder.layer.0.layer_scale1.lambda1
+  conditioner.main_image_encoder.model.encoder.layer.0.layer_scale2.lambda1
+  ... і ще 1586
+
+Згенеровано safetensors_inspector.py
