@@ -1,0 +1,35 @@
+============================================================
+Файл: clip_l.safetensors
+Шлях: D:\ComfyUI-Ukrainian\models\text_encoders\clip_l.safetensors
+Формат: safetensors
+Розмір: 234.7 МБ
+Кількість тензорів: 196
+============================================================
+
+ТИП:          Text Encoder / CLIP
+Впевненість:  medium
+
+Рекомендована папка ComfyUI: models/text_encoders/ або models/clip/
+
+Усі ключі метаданих (1):
+  format
+
+Приклади ключів тензорів:
+  text_model.embeddings.position_embedding.weight
+  text_model.embeddings.token_embedding.weight
+  text_model.encoder.layers.0.layer_norm1.bias
+  text_model.encoder.layers.0.layer_norm1.weight
+  text_model.encoder.layers.0.layer_norm2.bias
+  text_model.encoder.layers.0.layer_norm2.weight
+  text_model.encoder.layers.0.mlp.fc1.bias
+  text_model.encoder.layers.0.mlp.fc1.weight
+  text_model.encoder.layers.0.mlp.fc2.bias
+  text_model.encoder.layers.0.mlp.fc2.weight
+  text_model.encoder.layers.0.self_attn.k_proj.bias
+  text_model.encoder.layers.0.self_attn.k_proj.weight
+  text_model.encoder.layers.0.self_attn.out_proj.bias
+  text_model.encoder.layers.0.self_attn.out_proj.weight
+  text_model.encoder.layers.0.self_attn.q_proj.bias
+  ... і ще 181
+
+Згенеровано safetensors_inspector.py

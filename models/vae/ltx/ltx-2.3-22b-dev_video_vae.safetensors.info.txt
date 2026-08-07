@@ -1,0 +1,34 @@
+============================================================
+Файл: ltx-2.3-22b-dev_video_vae.safetensors
+Шлях: D:\ComfyUI-Ukrainian\models\vae\ltx\ltx-2.3-22b-dev_video_vae.safetensors
+Формат: safetensors
+Розмір: 1385.0 МБ
+Кількість тензорів: 170
+============================================================
+
+ТИП:          Unknown
+Впевненість:  low
+
+
+Усі ключі метаданих (3):
+  config, license, model_version
+
+Приклади ключів тензорів:
+  decoder.conv_in.conv.bias
+  decoder.conv_in.conv.weight
+  decoder.conv_out.conv.bias
+  decoder.conv_out.conv.weight
+  decoder.up_blocks.0.res_blocks.0.conv1.conv.bias
+  decoder.up_blocks.0.res_blocks.0.conv1.conv.weight
+  decoder.up_blocks.0.res_blocks.0.conv2.conv.bias
+  decoder.up_blocks.0.res_blocks.0.conv2.conv.weight
+  decoder.up_blocks.0.res_blocks.1.conv1.conv.bias
+  decoder.up_blocks.0.res_blocks.1.conv1.conv.weight
+  decoder.up_blocks.0.res_blocks.1.conv2.conv.bias
+  decoder.up_blocks.0.res_blocks.1.conv2.conv.weight
+  decoder.up_blocks.1.conv.conv.bias
+  decoder.up_blocks.1.conv.conv.weight
+  decoder.up_blocks.2.res_blocks.0.conv1.conv.bias
+  ... і ще 155
+
+Згенеровано safetensors_inspector.py

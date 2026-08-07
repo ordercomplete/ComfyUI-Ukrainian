@@ -1,0 +1,38 @@
+============================================================
+Файл: 10Eros_v1.4_fp8mixed_learned.safetensors
+Шлях: D:\ComfyUI-Ukrainian\models\checkpoints\10Eros\10Eros_v1.4_fp8mixed_learned.safetensors
+Формат: safetensors
+Розмір: 27810.9 МБ
+Кількість тензорів: 8411
+============================================================
+
+ТИП:          Diffusion Model / UNet (тільки ядро)
+Впевненість:  high
+
+Нотатки:
+  • Ймовірно для models/diffusion_models/ (Flux, SD3, DiT)
+
+Рекомендована папка ComfyUI: models/diffusion_models/
+
+Усі ключі метаданих (25):
+  _quantization_metadata, config, description, encrypted_wandb_properties, license, model_version, outlier_base, outlier_n_top, outlier_strength, outlier_tail_damp, reshape_blend, reshape_max_amp, reshape_max_scale, reshape_merged, reshape_no_amp, reshape_ref, reshape_save_dtype, selective_align_floor, selective_base, selective_floor_ref, selective_mode, selective_strength, selective_template_hi, selective_template_lo, selective_tendency
+
+Приклади ключів тензорів:
+  model.diffusion_model.transformer_blocks.10.attn1.to_k.weight_scale
+  model.diffusion_model.transformer_blocks.10.attn1.to_out.0.weight_scale
+  model.diffusion_model.transformer_blocks.10.attn1.to_q.weight_scale
+  model.diffusion_model.transformer_blocks.10.attn1.to_v.weight_scale
+  model.diffusion_model.transformer_blocks.10.attn2.to_k.weight_scale
+  model.diffusion_model.transformer_blocks.10.attn2.to_out.0.weight_scale
+  model.diffusion_model.transformer_blocks.10.attn2.to_q.weight_scale
+  model.diffusion_model.transformer_blocks.10.attn2.to_v.weight_scale
+  model.diffusion_model.transformer_blocks.10.audio_attn1.to_k.weight_scale
+  model.diffusion_model.transformer_blocks.10.audio_attn1.to_out.0.weight_scale
+  model.diffusion_model.transformer_blocks.10.audio_attn1.to_q.weight_scale
+  model.diffusion_model.transformer_blocks.10.audio_attn1.to_v.weight_scale
+  model.diffusion_model.transformer_blocks.10.audio_attn2.to_k.weight_scale
+  model.diffusion_model.transformer_blocks.10.audio_attn2.to_out.0.weight_scale
+  model.diffusion_model.transformer_blocks.10.audio_attn2.to_q.weight_scale
+  ... і ще 8396
+
+Згенеровано safetensors_inspector.py

@@ -1,0 +1,36 @@
+============================================================
+Файл: gemma-3-12b-it-abliterated_lora_rank64_bf16.safetensors
+Шлях: D:\ComfyUI-Ukrainian\models\loras\gemma-3-12b-it-abliterated_lora_rank64_bf16.safetensors
+Формат: safetensors
+Розмір: 599.1 МБ
+Кількість тензорів: 1000
+============================================================
+
+ТИП:          LoRA
+Підтип:       Standard LoRA
+Впевненість:  high
+
+Нотатки:
+  • Великий розмір для LoRA — можливо full fine-tune
+
+Рекомендована папка ComfyUI: models/loras/
+
+Приклади ключів тензорів:
+  text_encoders.transformer.model.embed_tokens.lora_down.weight
+  text_encoders.transformer.model.embed_tokens.lora_up.weight
+  text_encoders.transformer.model.layers.0.mlp.down_proj.lora_down.weight
+  text_encoders.transformer.model.layers.0.mlp.down_proj.lora_up.weight
+  text_encoders.transformer.model.layers.0.mlp.gate_proj.lora_down.weight
+  text_encoders.transformer.model.layers.0.mlp.gate_proj.lora_up.weight
+  text_encoders.transformer.model.layers.0.mlp.up_proj.lora_down.weight
+  text_encoders.transformer.model.layers.0.mlp.up_proj.lora_up.weight
+  text_encoders.transformer.model.layers.0.self_attn.k_proj.lora_down.weight
+  text_encoders.transformer.model.layers.0.self_attn.k_proj.lora_up.weight
+  text_encoders.transformer.model.layers.0.self_attn.o_proj.lora_down.weight
+  text_encoders.transformer.model.layers.0.self_attn.o_proj.lora_up.weight
+  text_encoders.transformer.model.layers.0.self_attn.q_proj.lora_down.weight
+  text_encoders.transformer.model.layers.0.self_attn.q_proj.lora_up.weight
+  text_encoders.transformer.model.layers.0.self_attn.v_proj.lora_down.weight
+  ... і ще 985
+
+Згенеровано safetensors_inspector.py

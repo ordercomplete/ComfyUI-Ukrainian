@@ -1,0 +1,22 @@
+============================================================
+Файл: ltx-2.3-22b-dev_embeddings_connectors.safetensors
+Шлях: D:\ComfyUI-Ukrainian\models\checkpoints\ltx\ltx-2.3-22b-dev_embeddings_connectors.safetensors
+Формат: safetensors
+Розмір: 2205.0 МБ
+Кількість тензорів: 4
+============================================================
+
+ТИП:          Unknown
+Впевненість:  low
+
+
+Усі ключі метаданих (2):
+  license, model_version
+
+Приклади ключів тензорів:
+  text_embedding_projection.audio_aggregate_embed.bias
+  text_embedding_projection.audio_aggregate_embed.weight
+  text_embedding_projection.video_aggregate_embed.bias
+  text_embedding_projection.video_aggregate_embed.weight
+
+Згенеровано safetensors_inspector.py

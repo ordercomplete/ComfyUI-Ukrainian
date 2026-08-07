@@ -1,0 +1,35 @@
+============================================================
+Файл: qwen_4b_ace15.safetensors
+Шлях: D:\ComfyUI-Ukrainian\models\text_encoders\qwen_4b_ace15.safetensors
+Формат: safetensors
+Розмір: 7991.0 МБ
+Кількість тензорів: 398
+============================================================
+
+ТИП:          Checkpoint (ймовірно)
+Впевненість:  low
+
+Нотатки:
+  • Великий файл з багатьма тензорами
+
+Рекомендована папка ComfyUI: models/checkpoints/
+
+Приклади ключів тензорів:
+  model.embed_tokens.weight
+  model.layers.0.input_layernorm.weight
+  model.layers.0.mlp.down_proj.weight
+  model.layers.0.mlp.gate_proj.weight
+  model.layers.0.mlp.up_proj.weight
+  model.layers.0.post_attention_layernorm.weight
+  model.layers.0.self_attn.k_norm.weight
+  model.layers.0.self_attn.k_proj.weight
+  model.layers.0.self_attn.o_proj.weight
+  model.layers.0.self_attn.q_norm.weight
+  model.layers.0.self_attn.q_proj.weight
+  model.layers.0.self_attn.v_proj.weight
+  model.layers.1.input_layernorm.weight
+  model.layers.1.mlp.down_proj.weight
+  model.layers.1.mlp.gate_proj.weight
+  ... і ще 383
+
+Згенеровано safetensors_inspector.py

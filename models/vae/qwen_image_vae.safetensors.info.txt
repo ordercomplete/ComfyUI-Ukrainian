@@ -1,0 +1,32 @@
+============================================================
+Файл: qwen_image_vae.safetensors
+Шлях: D:\ComfyUI-Ukrainian\models\vae\qwen_image_vae.safetensors
+Формат: safetensors
+Розмір: 242.0 МБ
+Кількість тензорів: 194
+============================================================
+
+ТИП:          VAE
+Впевненість:  high
+
+Рекомендована папка ComfyUI: models/vae/
+
+Приклади ключів тензорів:
+  conv1.bias
+  conv1.weight
+  conv2.bias
+  conv2.weight
+  decoder.conv1.bias
+  decoder.conv1.weight
+  decoder.head.0.gamma
+  decoder.head.2.bias
+  decoder.head.2.weight
+  decoder.middle.0.residual.0.gamma
+  decoder.middle.0.residual.2.bias
+  decoder.middle.0.residual.2.weight
+  decoder.middle.0.residual.3.gamma
+  decoder.middle.0.residual.6.bias
+  decoder.middle.0.residual.6.weight
+  ... і ще 179
+
+Згенеровано safetensors_inspector.py

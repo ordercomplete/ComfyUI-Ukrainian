@@ -1,0 +1,38 @@
+============================================================
+Файл: qwen_image_2512_fp8_e4m3fn.safetensors
+Шлях: D:\ComfyUI-Ukrainian\models\diffusion_models\qwen_image_2512_fp8_e4m3fn.safetensors
+Формат: safetensors
+Розмір: 19484.2 МБ
+Кількість тензорів: 1933
+============================================================
+
+ТИП:          Diffusion Model / UNet (тільки ядро)
+Впевненість:  high
+
+Нотатки:
+  • Ймовірно для models/diffusion_models/ (Flux, SD3, DiT)
+
+Рекомендована папка ComfyUI: models/diffusion_models/
+
+Усі ключі метаданих (2):
+  prompt, workflow
+
+Приклади ключів тензорів:
+  model.diffusion_model.img_in.bias
+  model.diffusion_model.img_in.weight
+  model.diffusion_model.norm_out.linear.bias
+  model.diffusion_model.norm_out.linear.weight
+  model.diffusion_model.proj_out.bias
+  model.diffusion_model.proj_out.weight
+  model.diffusion_model.time_text_embed.timestep_embedder.linear_1.bias
+  model.diffusion_model.time_text_embed.timestep_embedder.linear_1.weight
+  model.diffusion_model.time_text_embed.timestep_embedder.linear_2.bias
+  model.diffusion_model.time_text_embed.timestep_embedder.linear_2.weight
+  model.diffusion_model.transformer_blocks.0.attn.add_k_proj.bias
+  model.diffusion_model.transformer_blocks.0.attn.add_k_proj.weight
+  model.diffusion_model.transformer_blocks.0.attn.add_q_proj.bias
+  model.diffusion_model.transformer_blocks.0.attn.add_q_proj.weight
+  model.diffusion_model.transformer_blocks.0.attn.add_v_proj.bias
+  ... і ще 1918
+
+Згенеровано safetensors_inspector.py

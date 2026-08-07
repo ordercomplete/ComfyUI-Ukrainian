@@ -1,0 +1,38 @@
+============================================================
+Файл: Chroma1-HD-fp8_scaled_defaultloader_hybrid_large_rev2.safetensors
+Шлях: D:\ComfyUI-Ukrainian\models\diffusion_models\Chroma 8.9B (на базі FLUX.1-schnell)\Chroma1-HD-fp8_scaled_defaultloader_hybrid_large_rev2.safetensors
+Формат: safetensors
+Розмір: 8767.5 МБ
+Кількість тензорів: 1100
+============================================================
+
+ТИП:          Diffusion Model / UNet (тільки ядро)
+Впевненість:  high
+
+Нотатки:
+  • Ймовірно для models/diffusion_models/ (Flux, SD3, DiT)
+
+Рекомендована папка ComfyUI: models/diffusion_models/
+
+Усі ключі метаданих (1):
+  format
+
+Приклади ключів тензорів:
+  double_blocks.0.img_attn.proj.scale_input
+  double_blocks.0.img_attn.proj.scale_weight
+  double_blocks.0.img_attn.qkv.scale_input
+  double_blocks.0.img_attn.qkv.scale_weight
+  double_blocks.0.img_mlp.0.scale_input
+  double_blocks.0.img_mlp.0.scale_weight
+  double_blocks.0.img_mlp.2.scale_input
+  double_blocks.0.img_mlp.2.scale_weight
+  double_blocks.0.txt_attn.proj.scale_input
+  double_blocks.0.txt_attn.proj.scale_weight
+  double_blocks.0.txt_attn.qkv.scale_input
+  double_blocks.0.txt_attn.qkv.scale_weight
+  double_blocks.0.txt_mlp.0.scale_input
+  double_blocks.0.txt_mlp.0.scale_weight
+  double_blocks.0.txt_mlp.2.scale_input
+  ... і ще 1085
+
+Згенеровано safetensors_inspector.py

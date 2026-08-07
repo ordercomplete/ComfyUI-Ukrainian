@@ -1,0 +1,38 @@
+============================================================
+Файл: gemma-3-12b-it-ablit-norms-biproj-fp8mixed.safetensors
+Шлях: D:\ComfyUI-Ukrainian\models\loras\10Eros\gemma-3-12b-it-ablit-norms-biproj-fp8mixed.safetensors
+Формат: safetensors
+Розмір: 12186.6 МБ
+Кількість тензорів: 1299
+============================================================
+
+ТИП:          Checkpoint (ймовірно)
+Впевненість:  low
+
+Нотатки:
+  • Великий файл з багатьма тензорами
+
+Рекомендована папка ComfyUI: models/checkpoints/
+
+Усі ключі метаданих (4):
+  _quantization_metadata, format, key_layout, source
+
+Приклади ключів тензорів:
+  model.layers.0.mlp.down_proj.weight_scale
+  model.layers.0.mlp.gate_proj.weight_scale
+  model.layers.0.mlp.up_proj.weight_scale
+  model.layers.0.self_attn.k_proj.weight_scale
+  model.layers.0.self_attn.o_proj.weight_scale
+  model.layers.0.self_attn.q_proj.weight_scale
+  model.layers.0.self_attn.v_proj.weight_scale
+  model.layers.1.mlp.down_proj.weight_scale
+  model.layers.1.mlp.gate_proj.weight_scale
+  model.layers.1.mlp.up_proj.weight_scale
+  model.layers.1.self_attn.k_proj.weight_scale
+  model.layers.1.self_attn.o_proj.weight_scale
+  model.layers.1.self_attn.q_proj.weight_scale
+  model.layers.1.self_attn.v_proj.weight_scale
+  model.layers.10.mlp.down_proj.weight_scale
+  ... і ще 1284
+
+Згенеровано safetensors_inspector.py

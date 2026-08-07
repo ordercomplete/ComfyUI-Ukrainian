@@ -1,0 +1,33 @@
+============================================================
+Файл: my_lora_v3_step_800.safetensors
+Шлях: D:\ComfyUI-Ukrainian\models\loras\my_lora_v3\my_lora_v3_step_800.safetensors
+Формат: safetensors
+Розмір: 31.3 МБ
+Кількість тензорів: 320
+============================================================
+
+ТИП:          LoRA
+Підтип:       Standard LoRA
+Впевненість:  high
+
+Рекомендована папка ComfyUI: models/loras/
+
+Приклади ключів тензорів:
+  base_lm.layers.0.self_attn.k_proj.lora_A
+  base_lm.layers.0.self_attn.k_proj.lora_B
+  base_lm.layers.0.self_attn.o_proj.lora_A
+  base_lm.layers.0.self_attn.o_proj.lora_B
+  base_lm.layers.0.self_attn.q_proj.lora_A
+  base_lm.layers.0.self_attn.q_proj.lora_B
+  base_lm.layers.0.self_attn.v_proj.lora_A
+  base_lm.layers.0.self_attn.v_proj.lora_B
+  base_lm.layers.1.self_attn.k_proj.lora_A
+  base_lm.layers.1.self_attn.k_proj.lora_B
+  base_lm.layers.1.self_attn.o_proj.lora_A
+  base_lm.layers.1.self_attn.o_proj.lora_B
+  base_lm.layers.1.self_attn.q_proj.lora_A
+  base_lm.layers.1.self_attn.q_proj.lora_B
+  base_lm.layers.1.self_attn.v_proj.lora_A
+  ... і ще 305
+
+Згенеровано safetensors_inspector.py

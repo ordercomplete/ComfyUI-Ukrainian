@@ -1,0 +1,15 @@
+{
+  "learning_rate": 0.0001,
+  "lora_rank": 32,
+  "lora_alpha": 16,
+  "lora_dropout": 0.0,
+  "warmup_steps": 100,
+  "grad_accum_steps": 1,
+  "max_batch_tokens": 4096,
+  "sample_rate": 44100,
+  "weight_decay": 0.01,
+  "enable_lm_lora": false,
+  "enable_dit_lora": true,
+  "enable_proj_lora": false,
+  "base_model": "VoxCPM1.5"
+}

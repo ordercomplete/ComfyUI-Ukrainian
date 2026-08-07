@@ -1,0 +1,32 @@
+============================================================
+Файл: full_encoder_small_decoder.safetensors
+Шлях: D:\ComfyUI-Ukrainian\models\vae\full_encoder_small_decoder.safetensors
+Формат: safetensors
+Розмір: 238.0 МБ
+Кількість тензорів: 251
+============================================================
+
+ТИП:          VAE
+Впевненість:  high
+
+Рекомендована папка ComfyUI: models/vae/
+
+Приклади ключів тензорів:
+  bn.num_batches_tracked
+  bn.running_mean
+  bn.running_var
+  decoder.conv_in.bias
+  decoder.conv_in.weight
+  decoder.conv_out.bias
+  decoder.conv_out.weight
+  decoder.mid.attn_1.k.bias
+  decoder.mid.attn_1.k.weight
+  decoder.mid.attn_1.norm.bias
+  decoder.mid.attn_1.norm.weight
+  decoder.mid.attn_1.proj_out.bias
+  decoder.mid.attn_1.proj_out.weight
+  decoder.mid.attn_1.q.bias
+  decoder.mid.attn_1.q.weight
+  ... і ще 236
+
+Згенеровано safetensors_inspector.py

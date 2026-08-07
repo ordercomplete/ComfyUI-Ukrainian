@@ -1,0 +1,31 @@
+============================================================
+Файл: model.safetensors
+Шлях: D:\ComfyUI-Ukrainian\models\tts\VoxCPM\VoxCPM1.5\model.safetensors
+Формат: safetensors
+Розмір: 1529.2 МБ
+Кількість тензорів: 467
+============================================================
+
+ТИП:          Unknown
+Впевненість:  low
+
+
+Приклади ключів тензорів:
+  base_lm.embed_tokens.weight
+  base_lm.layers.0.input_layernorm.weight
+  base_lm.layers.0.mlp.down_proj.weight
+  base_lm.layers.0.mlp.gate_proj.weight
+  base_lm.layers.0.mlp.up_proj.weight
+  base_lm.layers.0.post_attention_layernorm.weight
+  base_lm.layers.0.self_attn.k_proj.weight
+  base_lm.layers.0.self_attn.o_proj.weight
+  base_lm.layers.0.self_attn.q_proj.weight
+  base_lm.layers.0.self_attn.v_proj.weight
+  base_lm.layers.1.input_layernorm.weight
+  base_lm.layers.1.mlp.down_proj.weight
+  base_lm.layers.1.mlp.gate_proj.weight
+  base_lm.layers.1.mlp.up_proj.weight
+  base_lm.layers.1.post_attention_layernorm.weight
+  ... і ще 452
+
+Згенеровано safetensors_inspector.py

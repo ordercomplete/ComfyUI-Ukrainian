@@ -1,0 +1,36 @@
+============================================================
+Файл: LTX-2.3-OmniNFT-RL-Lora_bf16.safetensors
+Шлях: D:\ComfyUI-Ukrainian\models\loras\3-frames\LTX-2.3-OmniNFT-RL-Lora_bf16.safetensors
+Формат: safetensors
+Розмір: 588.4 МБ
+Кількість тензорів: 2688
+============================================================
+
+ТИП:          LoRA
+Підтип:       Standard LoRA
+Впевненість:  high
+
+Нотатки:
+  • Великий розмір для LoRA — можливо full fine-tune
+
+Рекомендована папка ComfyUI: models/loras/
+
+Приклади ключів тензорів:
+  diffusion_model.transformer_blocks.0.attn1.to_k.lora_A.weight
+  diffusion_model.transformer_blocks.0.attn1.to_k.lora_B.weight
+  diffusion_model.transformer_blocks.0.attn1.to_out.0.lora_A.weight
+  diffusion_model.transformer_blocks.0.attn1.to_out.0.lora_B.weight
+  diffusion_model.transformer_blocks.0.attn1.to_q.lora_A.weight
+  diffusion_model.transformer_blocks.0.attn1.to_q.lora_B.weight
+  diffusion_model.transformer_blocks.0.attn1.to_v.lora_A.weight
+  diffusion_model.transformer_blocks.0.attn1.to_v.lora_B.weight
+  diffusion_model.transformer_blocks.0.attn2.to_k.lora_A.weight
+  diffusion_model.transformer_blocks.0.attn2.to_k.lora_B.weight
+  diffusion_model.transformer_blocks.0.attn2.to_out.0.lora_A.weight
+  diffusion_model.transformer_blocks.0.attn2.to_out.0.lora_B.weight
+  diffusion_model.transformer_blocks.0.attn2.to_q.lora_A.weight
+  diffusion_model.transformer_blocks.0.attn2.to_q.lora_B.weight
+  diffusion_model.transformer_blocks.0.attn2.to_v.lora_A.weight
+  ... і ще 2673
+
+Згенеровано safetensors_inspector.py

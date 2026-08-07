@@ -1,0 +1,38 @@
+============================================================
+Файл: acestep_v1.5_turbo.safetensors
+Шлях: D:\ComfyUI-Ukrainian\models\diffusion_models\acestep_v1.5_turbo.safetensors
+Формат: safetensors
+Розмір: 4566.0 МБ
+Кількість тензорів: 677
+============================================================
+
+ТИП:          Checkpoint (ймовірно)
+Впевненість:  low
+
+Нотатки:
+  • Великий файл з багатьма тензорами
+
+Рекомендована папка ComfyUI: models/checkpoints/
+
+Усі ключі метаданих (1):
+  format
+
+Приклади ключів тензорів:
+  decoder.condition_embedder.bias
+  decoder.condition_embedder.weight
+  decoder.layers.0.cross_attn.k_norm.weight
+  decoder.layers.0.cross_attn.k_proj.weight
+  decoder.layers.0.cross_attn.o_proj.weight
+  decoder.layers.0.cross_attn.q_norm.weight
+  decoder.layers.0.cross_attn.q_proj.weight
+  decoder.layers.0.cross_attn.v_proj.weight
+  decoder.layers.0.cross_attn_norm.weight
+  decoder.layers.0.mlp.down_proj.weight
+  decoder.layers.0.mlp.gate_proj.weight
+  decoder.layers.0.mlp.up_proj.weight
+  decoder.layers.0.mlp_norm.weight
+  decoder.layers.0.scale_shift_table
+  decoder.layers.0.self_attn.k_norm.weight
+  ... і ще 662
+
+Згенеровано safetensors_inspector.py

@@ -1,0 +1,22 @@
+============================================================
+Файл: ltx-2.3_text_projection_bf16.safetensors
+Шлях: D:\ComfyUI-Ukrainian\models\text_encoders\ltx-2.3_text_projection_bf16.safetensors
+Формат: safetensors
+Розмір: 2205.0 МБ
+Кількість тензорів: 4
+============================================================
+
+ТИП:          Unknown
+Впевненість:  low
+
+
+Усі ключі метаданих (4):
+  config, encrypted_wandb_properties, license, model_version
+
+Приклади ключів тензорів:
+  text_embedding_projection.audio_aggregate_embed.bias
+  text_embedding_projection.audio_aggregate_embed.weight
+  text_embedding_projection.video_aggregate_embed.bias
+  text_embedding_projection.video_aggregate_embed.weight
+
+Згенеровано safetensors_inspector.py

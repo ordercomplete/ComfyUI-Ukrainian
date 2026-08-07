@@ -1,0 +1,28 @@
+============================================================
+Файл: ltx-2.3-22b-dev-UD-Q4_K_S.gguf
+Шлях: D:\ComfyUI-Ukrainian\models\diffusion_models\ltx\ltx-2.3-22b-dev-UD-Q4_K_S.gguf
+Формат: gguf
+Розмір: 13558.6 МБ
+Кількість тензорів: 4444
+============================================================
+
+ТИП:          GGUF Model
+Впевненість:  medium
+Base model:   ltxv
+
+Нотатки:
+  • GGUF version: 3
+  • Кількість тензорів: 4444
+  • KV pairs: 4
+  • Загальний GGUF — потрібен відповідний loader (ComfyUI-GGUF тощо)
+
+
+Корисні метадані:
+  general.architecture: ltxv
+  general.quantization_version: 2
+  general.file_type: 14
+
+Усі ключі метаданих (3):
+  general.architecture, general.quantization_version, general.file_type
+
+Згенеровано safetensors_inspector.py

@@ -1,0 +1,35 @@
+============================================================
+Файл: Z-Image-Turbo-Fun-Controlnet-Union.safetensors
+Шлях: D:\ComfyUI-Ukrainian\models\model_patches\Z-Image-Turbo-Fun-Controlnet-Union.safetensors
+Формат: safetensors
+Розмір: 2957.9 МБ
+Кількість тензорів: 136
+============================================================
+
+ТИП:          Diffusion Model / UNet (тільки ядро)
+Впевненість:  high
+
+Нотатки:
+  • Ймовірно для models/diffusion_models/ (Flux, SD3, DiT)
+
+Рекомендована папка ComfyUI: models/diffusion_models/
+
+Приклади ключів тензорів:
+  control_all_x_embedder.2-1.bias
+  control_all_x_embedder.2-1.weight
+  control_layers.0.adaLN_modulation.0.bias
+  control_layers.0.adaLN_modulation.0.weight
+  control_layers.0.after_proj.bias
+  control_layers.0.after_proj.weight
+  control_layers.0.attention.norm_k.weight
+  control_layers.0.attention.norm_q.weight
+  control_layers.0.attention.to_k.weight
+  control_layers.0.attention.to_out.0.weight
+  control_layers.0.attention.to_q.weight
+  control_layers.0.attention.to_v.weight
+  control_layers.0.attention_norm1.weight
+  control_layers.0.attention_norm2.weight
+  control_layers.0.before_proj.bias
+  ... і ще 121
+
+Згенеровано safetensors_inspector.py
